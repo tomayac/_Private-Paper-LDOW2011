@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  7 FEB 2011 22:01
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  7 FEB 2011 23:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -556,6 +556,11 @@ Overfull \hbox (41.87599pt too wide) in paragraph at lines 217--218
  []
 
 
+Overfull \hbox (3.3907pt too wide) in paragraph at lines 223--224
+\T1/aer/m/n/9 We de-cided to use the W3C On-tol-ogy for Me-dia Re-sources[11]
+ []
+
+
 Overfull \hbox (15.82913pt too wide) in paragraph at lines 229--231
 \T1/aer/m/n/9 The cur-rent video an-no-ta-tion Web ser-vice is a re-implementat
 ion
@@ -565,6 +570,12 @@ ion
 Overfull \hbox (3.21117pt too wide) in paragraph at lines 229--231
 \T1/aer/m/n/9 fined each line in the closed cap-tions track as an \T1/aett/m/n/
 9 event:Event\T1/aer/m/n/9 .
+ []
+
+
+Overfull \hbox (4.10287pt too wide) in paragraph at lines 229--231
+\T1/aer/m/n/9 pre-vi-ous SemWe-b-Vid im-ple-men-ta-tion we used \T1/aett/m/n/9 
+event:factor\T1/aer/m/n/9 ,
  []
 
 [3]
@@ -639,111 +650,109 @@ Overfull \hbox (3.27455pt too wide) in paragraph at lines 279--279
 []\secfnt The Need For Pro-vid-ing Prove-nance Meta-
  []
 
-(./sigproc-sp.bbl)
-Overfull \hbox (7.39705pt too wide) in paragraph at lines 311--312
+(./sigproc-sp.bbl [5])
+Overfull \hbox (7.39705pt too wide) in paragraph at lines 315--316
 \T1/aer/m/n/9 mean-ing $\T1/aett/m/n/9 http : / / dbpedia . org / resource / Ba
 rack _ Obama$ \T1/aer/m/n/9 (only
  []
 
 
-Overfull \hbox (118.41046pt too wide) in paragraph at lines 379--379
+Overfull \hbox (118.41046pt too wide) in paragraph at lines 383--383
 []  \T1/aett/m/n/9 <http://gdata.youtube.com/feeds/api/videos/3PuHGKnboNY> ctag
 :tagged :tag .[] 
  []
 
 
-Overfull \hbox (38.2397pt too wide) in paragraph at lines 379--379
+Overfull \hbox (38.2397pt too wide) in paragraph at lines 383--383
 []    \T1/aett/m/n/9 ctag:means <http://dbpedia.org/resource/Barack_Obama> ;[] 
 
  []
 
 
-Overfull \hbox (33.52377pt too wide) in paragraph at lines 379--379
+Overfull \hbox (33.52377pt too wide) in paragraph at lines 383--383
 []    \T1/aett/m/n/9 prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;[] 
  []
 
 
-Overfull \hbox (66.53526pt too wide) in paragraph at lines 379--379
+Overfull \hbox (66.53526pt too wide) in paragraph at lines 383--383
 []      \T1/aett/m/n/9 prv:operatedBy <http://tomayac.com/thomas_steiner.rdf#me
 > .[] 
  []
 
 
-Overfull \hbox (52.38748pt too wide) in paragraph at lines 379--379
+Overfull \hbox (52.38748pt too wide) in paragraph at lines 383--383
 []        \T1/aett/m/n/9 prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;
 [] 
  []
 
 
-Overfull \hbox (85.39897pt too wide) in paragraph at lines 379--379
+Overfull \hbox (85.39897pt too wide) in paragraph at lines 383--383
 []          \T1/aett/m/n/9 prv:operatedBy <http://tomayac.com/thomas_steiner.rd
 f#me> .[] 
  []
 
 
-Overfull \hbox (108.9786pt too wide) in paragraph at lines 379--379
+Overfull \hbox (108.9786pt too wide) in paragraph at lines 383--383
 []        \T1/aett/m/n/9 prv:accessedService <http://api.freebase.com/api/servi
 ce/search> ;[] 
  []
 
 
-Overfull \hbox (226.87679pt too wide) in paragraph at lines 379--379
+Overfull \hbox (226.87679pt too wide) in paragraph at lines 383--383
 []        \T1/aett/m/n/9 prv:accessedResource <http://api.freebase.com/api/serv
 ice/search?format=json&query=obama> ;[] 
  []
 
 
-Overfull \hbox (104.26268pt too wide) in paragraph at lines 379--379
+Overfull \hbox (104.26268pt too wide) in paragraph at lines 383--383
 []              \T1/aett/m/n/9 http:headerName <http://www.w3.org/2008/http-hea
 der#host> ;[] 
  []
 
 
-Overfull \hbox (52.38748pt too wide) in paragraph at lines 379--379
+Overfull \hbox (52.38748pt too wide) in paragraph at lines 383--383
 []        \T1/aett/m/n/9 prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;
 [] 
  []
 
 
-Overfull \hbox (85.39897pt too wide) in paragraph at lines 379--379
+Overfull \hbox (85.39897pt too wide) in paragraph at lines 383--383
 []          \T1/aett/m/n/9 prv:operatedBy <http://tomayac.com/thomas_steiner.rd
 f#me> .[] 
  []
 
 
-Overfull \hbox (33.52377pt too wide) in paragraph at lines 379--379
+Overfull \hbox (33.52377pt too wide) in paragraph at lines 383--383
 []        \T1/aett/m/n/9 prv:accessedService <http://lookup.dbpedia.org/> ;[] 
  []
 
 
-Overfull \hbox (259.88828pt too wide) in paragraph at lines 379--379
+Overfull \hbox (259.88828pt too wide) in paragraph at lines 383--383
 []        \T1/aett/m/n/9 prv:accessedResource <http://lookup.dbpedia.org/api/se
 arch.asmx/KeywordSearch?QueryString=obama> ;[] 
  []
 
-[5]
-Overfull \hbox (5.22821pt too wide) in paragraph at lines 379--379
+
+Overfull \hbox (5.22821pt too wide) in paragraph at lines 383--383
 []              \T1/aett/m/n/9 http:fieldValue "lookup.dbpedia.org" ;[] 
  []
 
 
-Overfull \hbox (104.26268pt too wide) in paragraph at lines 379--379
+Overfull \hbox (104.26268pt too wide) in paragraph at lines 383--383
 []              \T1/aett/m/n/9 http:headerName <http://www.w3.org/2008/http-hea
 der#host> ;[] 
  []
 
-[6
-
-] (./sigproc-sp.aux)
+[6] (./sigproc-sp.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3142 strings out of 493747
- 40768 string characters out of 3143546
- 101219 words of memory out of 3000000
- 6354 multiletter control sequences out of 15000+200000
+ 3147 strings out of 493747
+ 40852 string characters out of 3143546
+ 101238 words of memory out of 3000000
+ 6359 multiletter control sequences out of 15000+200000
  49956 words of font info for 69 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  39i,10n,26p,2055b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -757,7 +766,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2010/te
 xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2010/texmf-dis
 t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2010/texmf-dist/fonts
 /type1/urw/times/utmb8a.pfb>
-Output written on sigproc-sp.pdf (6 pages, 139255 bytes).
+Output written on sigproc-sp.pdf (6 pages, 145986 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
