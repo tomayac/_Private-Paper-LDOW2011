@@ -202,6 +202,20 @@ As can be seen the entity names mismatch (\texttt{google inc.} vs. \texttt{googl
 
 It is to be noted that the results from URI Lookup are a subset of NLP in our case, however, while all URI Lookup services accept one-word arguments (e.g., \texttt{google}), only AlchemyAPI accepts one-word arguments, the two other services accept only non-trivial text fragments (e.g., \texttt{google is a company founded by larry page} works). 
 
+\subsection{Design Of the Web Service}\label{sec:design}
+Currently our Web service supports the following operations:
+\begin{itemize}
+\item Looking up URIs for a given term (allowed service names are "dbpedia", "freebase", "uberblic", "sindice", and "combined"): \texttt{GET} \url{/uri-lookup/{service_name}/{term}}
+\item Extracting entities from a given text fragment (allowed service names are "opencalais", "zemanta", "alchemyapi", and "combined"): \texttt{GET} \url{/entity-extraction/{service_name}/{text_fragment}}
+\item Get an RDF annotation for a video with a given video ID: \texttt{GET} \url{/youtube/rdf/{video_id}}
+\item Update an RDF annotation for a video with a given video ID: \texttt{PUT} \url{/youtube/rdf/{video_id}}
+\item Delete an RDF annotation for a video with a given video ID: \texttt{DELETE} \url{/youtube/rdf/{video_id}}
+\item Get metadata from YouTube for a video with a given video ID: \texttt{GET} \url{/youtube/video/{video_id}}
+\item Get all closed captions from YouTube for a video with a given video ID: \texttt{GET} \url{/youtube/video/{video_id}/closedcaptions}
+\item Get closed captions in a given language from YouTube for a video with a given video ID: \texttt{GET} \url{/youtube/video/{video_id}/closedcaptions/{language_code}}
+\item Get a plaintext audio transcript from YouTube for a video with a given video ID: \texttt{GET} \url{/youtube/video/{video_id}/audiotranscription}
+\item Get a plaintext audio transcript in a given language from YouTube for a video with a given video ID: \texttt{GET} \url{/youtube/video/{video_id}/audiotranscription/{language_code}}
+\end{itemize}
 \section{Representing Videos in RDF}\label{sec:representing}
 In the following we present the particular components of the available video metadata and their representation in RDF.
 
@@ -239,8 +253,32 @@ In the following we outline the required steps in order to make statements about
 \texttt{prvTypes:DataCreatingService} to be precise. This service is \texttt{prv:operatedBy} us (\url{http://tomayac.com/thomas_steiner.rdf#me}. Time is often important for provenance, so the \texttt{prv:performedAt} date of the \texttt{prv:DataCreation} needs to be saved. During the process of the \texttt{prv:DataCreation} there are \texttt{prv:usedData}, which are \texttt{prv:retrievedBy} a \texttt{prv:DataAcess} that is \texttt{prv:performedAt} a certain time, and \texttt{prv:performedBy} an actor and \texttt{prv:operatedBy} us (\url{http://tomayac.com/thomas_steiner.rdf#me}. For the \texttt{prv:DataAccess} we \texttt{prv:accessedService} from a \texttt{prv:DataProvidingService} of which we \texttt{prv:accessedResource} at a certain \texttt{irw:WebResource}. Therefore we \texttt{prvTypes:exchangedHTTPMessage} which is an \texttt{http:Request} using \texttt{http:httpVersion} "1.1" and the \texttt{http:methodName} "GET".
 See Annex \ref{sec:appendix} for an overview of the necessary provenance RDF.
 
+\subsection{Tracking Provenance With Human Interaction}\label{sec:human}
+Oftentimes completely automatically generated RDF video annotation files will need a little manual fine-tuning. In our RESTful Web service we have thus envisiond that not only a big archive of automatically generated video annotations gets built, but that also people can correct errors in the RDF interactively (or remove completely wrong video annotations). For the correction case this can be tracked using the Provenance Vocabulary as follows (let's assume we wanted to replace an unfriendly Freebase \texttt{ctag:means} value of \url{http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000042acea} with the friendlier variant \url{http://rdf.freebase.com/rdf/en.google}):
+\begin{verbatim}
+:G_corrected = {
+  <http://gdata.youtube.com/feeds/api/videos/3PuHGKnboNY> ctag:tagged :tag_corrected .
+  :tag_corrected
+    a ctag:Tag ;
+    ctag:label "google" ;
+    ctag:means <http://rdf.freebase.com/rdf/en.google> ;
+} .
+:G_corrected
+  a prv:DataItem ;
+  a rdfg:Graph ;
+  prv:createdBy [
+    a prv:DataCreation ;
+    prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;
+    prv:performedBy [
+      a prv:HumanActor ;
+      <http://tomayac.com/thomas_steiner.rdf#me> ;
+    ] ;
+  ] .
+\end{verbatim}
+Note how the \texttt{prv:DataCreation} no longer contains references to \texttt{prv:usedData}.
+
 \subsection{The Need For Providing Provenance Metadata}
-Hartig et al. mention in \cite{ipaw10:olaf} some reasons that justify the need for provenance metadata, among those linked dataset replication and distribution on the Web with not necessarily always the same namespaces. Based on the same source data, different copies of a linked dataset can be created with different degrees of interconnectedness by different publishers. We add to this list the automatic conversion of legacy unstructured data to Linked Data with heuristics, where, as in our case, extracted entities while still being consolidated and backed up by different data sources, might still be wrong. Especially with our "mash-up"-like approach it is very desirable to be able to track back to the concrete source where a certain piece of information might have come from.
+Hartig et al. mention in \cite{ipaw10:olaf} some reasons that justify the need for provenance metadata, among those linked dataset replication and distribution on the Web with not necessarily always the same namespaces. Based on the same source data, different copies of a linked dataset can be created with different degrees of interconnectedness by different publishers. We add to this list the automatic conversion of legacy unstructured data to Linked Data with heuristics, where, as in our case, extracted entities while still being consolidated and backed up by different data sources, might still be wrong. Especially with our "mash-up"-like approach it is very desirable to be able to track back to the concrete source where a certain piece of information might have come from. 
 
 \section{Related Work}\label{related}
 
@@ -250,7 +288,7 @@ Hartig et al. mention in \cite{ipaw10:olaf} some reasons that justify the need f
 
 %ACKNOWLEDGMENTS are optional
 \section{Acknowledgments}\label{sec:acknowledgments}
-This work is partly funded by the EU FP7 I-SEARCH project (project reference 248296).
+We would like to thank Olaf Hartig from the Hmboldt-Universit\"{a}t zu Berlin for his kind support with the correct use of the Provenance Vocabulary. This work is partly funded by the EU FP7 I-SEARCH project (project reference 248296).
 
 %
 % The following two commands are all you need in the

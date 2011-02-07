@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  7 FEB 2011 15:38
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  7 FEB 2011 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -258,7 +258,11 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
 )
-(./sigproc-sp.aux)
+(./sigproc-sp.aux
+
+LaTeX Warning: Label `sec:youtube' multiply defined.
+
+)
 \openout1 = `sigproc-sp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -279,7 +283,8 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 35.
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 35.
- (/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
 \scratchdimen=\dimen123
@@ -352,11 +357,8 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 99.
 (/usr/local/texlive/2010/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-
-LaTeX Warning: Citation `Steiner:SemWebVid' on page \thepage  undefined on inpu
-t line 112.
-
 LaTeX Font Info:    Try loading font information for T1+aett on input line 112.
+
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
@@ -537,212 +539,197 @@ s / en / google$\T1/aer/m/n/9 , whereas
  []
 
 
-LaTeX Warning: Citation `W3C:MediaOntology' on page \thepage  undefined on inpu
-t line 209.
+Overfull \hbox (6.05212pt too wide) in paragraph at lines 209--210
+\T1/aer/m/n/9 ser-vice names are "open-calais", "ze-manta", "alche-myapi",
+ []
 
 
-LaTeX Warning: Citation `W3C:MediaOntology' on page \thepage  undefined on inpu
-t line 209.
+Overfull \hbox (3.14415pt too wide) in paragraph at lines 209--210
+\T1/aer/m/n/9 and "com-bined"): \T1/aett/m/n/9 GET $/entity -[] extraction / {s
+ervice _
+ []
 
 
-LaTeX Warning: Citation `CommonTag:Spec' on page \thepage  undefined on input l
-ine 212.
+Overfull \hbox (41.87599pt too wide) in paragraph at lines 217--218
+\T1/aett/m/n/9 /youtube / video / {video _ id} / audiotranscription / {language
+ _
+ []
 
-
-LaTeX Warning: Citation `W3C:MediaFrags' on page \thepage  undefined on input l
-ine 215.
-
-
-LaTeX Warning: Reference `sec:youtube' on page \thepage  undefined on input lin
-e 217.
-
-
-Overfull \hbox (19.37599pt too wide) in paragraph at lines 224--224
+[3]
+Overfull \hbox (19.37599pt too wide) in paragraph at lines 238--238
 []\T1/aett/m/n/9 <http://example.org/video.webm#t=10,20> a ma:fragment ;[] 
  []
 
 
-Overfull \hbox (2.63632pt too wide) in paragraph at lines 226--226
+Overfull \hbox (2.63632pt too wide) in paragraph at lines 240--240
 []\secfnt TRACKING PROVE-NANCE WITH MUL-
  []
 
 
-LaTeX Warning: Citation `Hartig:Provenance' on page \thepage  undefined on inpu
-t line 227.
-
-
-LaTeX Warning: Reference `sec:consolidation1' on page \thepage  undefined on in
-put line 227.
-
-
-LaTeX Warning: Reference `sec:consolidation2' on page \thepage  undefined on in
-put line 227.
-
-
-LaTeX Warning: Citation `Bizer:TriG' on page \thepage  undefined on input line 
-227.
-
-[3]
-Overfull \hbox (28.80785pt too wide) in paragraph at lines 236--236
+Overfull \hbox (28.80785pt too wide) in paragraph at lines 250--250
 []  \T1/aett/m/n/9 <http://example.org/video.webm#t=10,20> a ma:fragment ;[] 
  []
 
 
-LaTeX Warning: Reference `sec:appendix' on page \thepage  undefined on input li
-ne 240.
-
-
-Overfull \hbox (63.16754pt too wide) in paragraph at lines 238--241
+Overfull \hbox (63.16754pt too wide) in paragraph at lines 252--255
 \T1/aett/m/n/9 prv:performedBy \T1/aer/m/n/9 a \T1/aett/m/n/9 prv:NonHumanActor
 \T1/aer/m/n/9 , a \T1/aett/m/n/9 prvTypes:DataCreatingService
  []
 
 
-Overfull \hbox (26.32161pt too wide) in paragraph at lines 238--241
+Overfull \hbox (26.32161pt too wide) in paragraph at lines 252--255
 \T1/aer/m/n/9 a cer-tain time, and \T1/aett/m/n/9 prv:performedBy \T1/aer/m/n/9
  an ac-tor and \T1/aett/m/n/9 prv:operatedBy
  []
 
 
-Overfull \hbox (72.98839pt too wide) in paragraph at lines 238--241
+Overfull \hbox (72.98839pt too wide) in paragraph at lines 252--255
 \T1/aett/m/n/9 prv:DataAccess \T1/aer/m/n/9 we \T1/aett/m/n/9 prv:accessedServi
 ce \T1/aer/m/n/9 from a \T1/aett/m/n/9 prv:DataProvidingService
  []
 
 
-Overfull \hbox (23.88478pt too wide) in paragraph at lines 238--241
+Overfull \hbox (23.88478pt too wide) in paragraph at lines 252--255
 \T1/aer/m/n/9 of which we \T1/aett/m/n/9 prv:accessedResource \T1/aer/m/n/9 at 
 a cer-tain \T1/aett/m/n/9 irw:WebResource\T1/aer/m/n/9 .
  []
 
 
-Overfull \hbox (42.80226pt too wide) in paragraph at lines 238--241
+Overfull \hbox (42.80226pt too wide) in paragraph at lines 252--255
 \T1/aett/m/n/9 http:Request \T1/aer/m/n/9 us-ing \T1/aett/m/n/9 http:httpVersio
 n \T1/aer/m/n/9 "1.1" and the \T1/aett/m/n/9 http:methodName
  []
 
 
-Overfull \hbox (3.27455pt too wide) in paragraph at lines 242--242
+Overfull \hbox (38.2397pt too wide) in paragraph at lines 257--258
+\T1/aett/m/n/9 / / rdf . freebase . com / ns / guid . 9202a8c04000641f800000000
+042acea$
+ []
+
+
+Overfull \hbox (165.56973pt too wide) in paragraph at lines 277--277
+[]  \T1/aett/m/n/9 <http://gdata.youtube.com/feeds/api/videos/3PuHGKnboNY> ctag
+:tagged :tag_corrected .[] 
+ []
+
+
+Overfull \hbox (24.09192pt too wide) in paragraph at lines 277--277
+[]    \T1/aett/m/n/9 ctag:means <http://rdf.freebase.com/rdf/en.google> ;[] 
+ []
+
+
+Overfull \hbox (33.52377pt too wide) in paragraph at lines 277--277
+[]    \T1/aett/m/n/9 prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;[] 
+ []
+
+
+Overfull \hbox (3.27455pt too wide) in paragraph at lines 280--280
 []\secfnt The Need For Pro-vid-ing Prove-nance Meta-
  []
 
-
-LaTeX Warning: Citation `ipaw10:olaf' on page \thepage  undefined on input line
- 243.
-
-
-Overfull \hbox (2.31866pt too wide) in paragraph at lines 253--254
-\T1/aer/m/n/9 This work is partly funded by the EU FP7 I-SEARCH project
- []
-
-(./sigproc-sp.bbl)
-Overfull \hbox (7.39705pt too wide) in paragraph at lines 273--274
+[4] (./sigproc-sp.bbl)
+Overfull \hbox (7.39705pt too wide) in paragraph at lines 311--312
 \T1/aer/m/n/9 mean-ing $\T1/aett/m/n/9 http : / / dbpedia . org / resource / Ba
 rack _ Obama$ \T1/aer/m/n/9 (only
  []
 
 
-Overfull \hbox (118.41046pt too wide) in paragraph at lines 341--341
+Overfull \hbox (118.41046pt too wide) in paragraph at lines 379--379
 []  \T1/aett/m/n/9 <http://gdata.youtube.com/feeds/api/videos/3PuHGKnboNY> ctag
 :tagged :tag .[] 
  []
 
 
-Overfull \hbox (38.2397pt too wide) in paragraph at lines 341--341
+Overfull \hbox (38.2397pt too wide) in paragraph at lines 379--379
 []    \T1/aett/m/n/9 ctag:means <http://dbpedia.org/resource/Barack_Obama> ;[] 
 
  []
 
 
-Overfull \hbox (33.52377pt too wide) in paragraph at lines 341--341
+Overfull \hbox (33.52377pt too wide) in paragraph at lines 379--379
 []    \T1/aett/m/n/9 prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;[] 
  []
 
 
-Overfull \hbox (66.53526pt too wide) in paragraph at lines 341--341
+Overfull \hbox (66.53526pt too wide) in paragraph at lines 379--379
 []      \T1/aett/m/n/9 prv:operatedBy <http://tomayac.com/thomas_steiner.rdf#me
 > .[] 
  []
 
 
-Overfull \hbox (52.38748pt too wide) in paragraph at lines 341--341
+Overfull \hbox (52.38748pt too wide) in paragraph at lines 379--379
 []        \T1/aett/m/n/9 prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;
 [] 
  []
 
 
-Overfull \hbox (85.39897pt too wide) in paragraph at lines 341--341
+Overfull \hbox (85.39897pt too wide) in paragraph at lines 379--379
 []          \T1/aett/m/n/9 prv:operatedBy <http://tomayac.com/thomas_steiner.rd
 f#me> .[] 
  []
 
 
-Overfull \hbox (108.9786pt too wide) in paragraph at lines 341--341
+Overfull \hbox (108.9786pt too wide) in paragraph at lines 379--379
 []        \T1/aett/m/n/9 prv:accessedService <http://api.freebase.com/api/servi
 ce/search> ;[] 
  []
 
 
-Overfull \hbox (226.87679pt too wide) in paragraph at lines 341--341
+Overfull \hbox (226.87679pt too wide) in paragraph at lines 379--379
 []        \T1/aett/m/n/9 prv:accessedResource <http://api.freebase.com/api/serv
 ice/search?format=json&query=obama> ;[] 
  []
 
-[4]
-Overfull \hbox (104.26268pt too wide) in paragraph at lines 341--341
+
+Overfull \hbox (104.26268pt too wide) in paragraph at lines 379--379
 []              \T1/aett/m/n/9 http:headerName <http://www.w3.org/2008/http-hea
 der#host> ;[] 
  []
 
 
-Overfull \hbox (52.38748pt too wide) in paragraph at lines 341--341
+Overfull \hbox (52.38748pt too wide) in paragraph at lines 379--379
 []        \T1/aett/m/n/9 prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;
 [] 
  []
 
 
-Overfull \hbox (85.39897pt too wide) in paragraph at lines 341--341
+Overfull \hbox (85.39897pt too wide) in paragraph at lines 379--379
 []          \T1/aett/m/n/9 prv:operatedBy <http://tomayac.com/thomas_steiner.rd
 f#me> .[] 
  []
 
 
-Overfull \hbox (33.52377pt too wide) in paragraph at lines 341--341
+Overfull \hbox (33.52377pt too wide) in paragraph at lines 379--379
 []        \T1/aett/m/n/9 prv:accessedService <http://lookup.dbpedia.org/> ;[] 
  []
 
 
-Overfull \hbox (259.88828pt too wide) in paragraph at lines 341--341
+Overfull \hbox (259.88828pt too wide) in paragraph at lines 379--379
 []        \T1/aett/m/n/9 prv:accessedResource <http://lookup.dbpedia.org/api/se
 arch.asmx/KeywordSearch?QueryString=obama> ;[] 
  []
 
 
-Overfull \hbox (5.22821pt too wide) in paragraph at lines 341--341
+Overfull \hbox (5.22821pt too wide) in paragraph at lines 379--379
 []              \T1/aett/m/n/9 http:fieldValue "lookup.dbpedia.org" ;[] 
  []
 
 
-Overfull \hbox (104.26268pt too wide) in paragraph at lines 341--341
+Overfull \hbox (104.26268pt too wide) in paragraph at lines 379--379
 []              \T1/aett/m/n/9 http:headerName <http://www.w3.org/2008/http-hea
 der#host> ;[] 
  []
 
-[5
+[5] (./sigproc-sp.aux)
 
-] (./sigproc-sp.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3139 strings out of 493747
- 40730 string characters out of 3143546
- 99032 words of memory out of 3000000
- 6351 multiletter control sequences out of 15000+200000
+ 3141 strings out of 493747
+ 40753 string characters out of 3143546
+ 101214 words of memory out of 3000000
+ 6353 multiletter control sequences out of 15000+200000
  49956 words of font info for 69 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  39i,10n,26p,2055b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -750,15 +737,16 @@ Here is how much of TeX's memory you used:
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/tex
 live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
 e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
-010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/201
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2010/
-texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2010/texmf-d
-ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2010/texmf-dist/fon
-ts/type1/urw/times/utmb8a.pfb>
-Output written on sigproc-sp.pdf (5 pages, 128169 bytes).
+010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/201
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2010/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2010/te
+xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2010/texmf-dis
+t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2010/texmf-dist/fonts
+/type1/urw/times/utmb8a.pfb>
+Output written on sigproc-sp.pdf (5 pages, 137999 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
