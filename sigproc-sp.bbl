@@ -22,6 +22,11 @@ O.~Hartig and J.~Zhao.
   2011.
 \newblock \url{http://purl.org/net/provenance/ns}.
 
+\bibitem{Raimond:Event}
+Y.~Raimond and S.~Abdallah.
+\newblock {The Event Ontology}, October 25, 2007.
+\newblock \url{http://motools.sourceforge.net/event/event.html}.
+
 \bibitem{Steiner:SemWebVid}
 T.~Steiner.
 \newblock Semwebvid - making video a first class semantic web citizen and a

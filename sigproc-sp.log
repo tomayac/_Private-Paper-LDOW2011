@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  7 FEB 2011 17:27
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  7 FEB 2011 22:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -555,79 +555,91 @@ Overfull \hbox (41.87599pt too wide) in paragraph at lines 217--218
  _
  []
 
+
+Overfull \hbox (15.82913pt too wide) in paragraph at lines 229--231
+\T1/aer/m/n/9 The cur-rent video an-no-ta-tion Web ser-vice is a re-implementat
+ion
+ []
+
+
+Overfull \hbox (3.21117pt too wide) in paragraph at lines 229--231
+\T1/aer/m/n/9 fined each line in the closed cap-tions track as an \T1/aett/m/n/
+9 event:Event\T1/aer/m/n/9 .
+ []
+
 [3]
-Overfull \hbox (19.37599pt too wide) in paragraph at lines 238--238
+Overfull \hbox (19.37599pt too wide) in paragraph at lines 237--237
 []\T1/aett/m/n/9 <http://example.org/video.webm#t=10,20> a ma:fragment ;[] 
  []
 
 
-Overfull \hbox (2.63632pt too wide) in paragraph at lines 240--240
+Overfull \hbox (2.63632pt too wide) in paragraph at lines 239--239
 []\secfnt TRACKING PROVE-NANCE WITH MUL-
  []
 
 
-Overfull \hbox (28.80785pt too wide) in paragraph at lines 250--250
+Overfull \hbox (28.80785pt too wide) in paragraph at lines 249--249
 []  \T1/aett/m/n/9 <http://example.org/video.webm#t=10,20> a ma:fragment ;[] 
  []
 
 
-Overfull \hbox (63.16754pt too wide) in paragraph at lines 252--255
+Overfull \hbox (63.16754pt too wide) in paragraph at lines 251--254
 \T1/aett/m/n/9 prv:performedBy \T1/aer/m/n/9 a \T1/aett/m/n/9 prv:NonHumanActor
 \T1/aer/m/n/9 , a \T1/aett/m/n/9 prvTypes:DataCreatingService
  []
 
 
-Overfull \hbox (26.32161pt too wide) in paragraph at lines 252--255
+Overfull \hbox (26.32161pt too wide) in paragraph at lines 251--254
 \T1/aer/m/n/9 a cer-tain time, and \T1/aett/m/n/9 prv:performedBy \T1/aer/m/n/9
  an ac-tor and \T1/aett/m/n/9 prv:operatedBy
  []
 
 
-Overfull \hbox (72.98839pt too wide) in paragraph at lines 252--255
+Overfull \hbox (72.98839pt too wide) in paragraph at lines 251--254
 \T1/aett/m/n/9 prv:DataAccess \T1/aer/m/n/9 we \T1/aett/m/n/9 prv:accessedServi
 ce \T1/aer/m/n/9 from a \T1/aett/m/n/9 prv:DataProvidingService
  []
 
 
-Overfull \hbox (23.88478pt too wide) in paragraph at lines 252--255
+Overfull \hbox (23.88478pt too wide) in paragraph at lines 251--254
 \T1/aer/m/n/9 of which we \T1/aett/m/n/9 prv:accessedResource \T1/aer/m/n/9 at 
 a cer-tain \T1/aett/m/n/9 irw:WebResource\T1/aer/m/n/9 .
  []
 
 
-Overfull \hbox (42.80226pt too wide) in paragraph at lines 252--255
+Overfull \hbox (42.80226pt too wide) in paragraph at lines 251--254
 \T1/aett/m/n/9 http:Request \T1/aer/m/n/9 us-ing \T1/aett/m/n/9 http:httpVersio
 n \T1/aer/m/n/9 "1.1" and the \T1/aett/m/n/9 http:methodName
  []
 
 
-Overfull \hbox (38.2397pt too wide) in paragraph at lines 257--258
+Overfull \hbox (38.2397pt too wide) in paragraph at lines 256--257
 \T1/aett/m/n/9 / / rdf . freebase . com / ns / guid . 9202a8c04000641f800000000
 042acea$
  []
 
 
-Overfull \hbox (165.56973pt too wide) in paragraph at lines 277--277
+Overfull \hbox (165.56973pt too wide) in paragraph at lines 276--276
 []  \T1/aett/m/n/9 <http://gdata.youtube.com/feeds/api/videos/3PuHGKnboNY> ctag
 :tagged :tag_corrected .[] 
  []
 
 
-Overfull \hbox (24.09192pt too wide) in paragraph at lines 277--277
+Overfull \hbox (24.09192pt too wide) in paragraph at lines 276--276
 []    \T1/aett/m/n/9 ctag:means <http://rdf.freebase.com/rdf/en.google> ;[] 
  []
 
 
-Overfull \hbox (33.52377pt too wide) in paragraph at lines 277--277
+Overfull \hbox (33.52377pt too wide) in paragraph at lines 276--276
 []    \T1/aett/m/n/9 prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;[] 
  []
 
-
-Overfull \hbox (3.27455pt too wide) in paragraph at lines 280--280
+[4]
+Overfull \hbox (3.27455pt too wide) in paragraph at lines 279--279
 []\secfnt The Need For Pro-vid-ing Prove-nance Meta-
  []
 
-[4] (./sigproc-sp.bbl)
+(./sigproc-sp.bbl)
 Overfull \hbox (7.39705pt too wide) in paragraph at lines 311--312
 \T1/aer/m/n/9 mean-ing $\T1/aett/m/n/9 http : / / dbpedia . org / resource / Ba
 rack _ Obama$ \T1/aer/m/n/9 (only
@@ -709,7 +721,7 @@ Overfull \hbox (259.88828pt too wide) in paragraph at lines 379--379
 arch.asmx/KeywordSearch?QueryString=obama> ;[] 
  []
 
-
+[5]
 Overfull \hbox (5.22821pt too wide) in paragraph at lines 379--379
 []              \T1/aett/m/n/9 http:fieldValue "lookup.dbpedia.org" ;[] 
  []
@@ -720,16 +732,18 @@ Overfull \hbox (104.26268pt too wide) in paragraph at lines 379--379
 der#host> ;[] 
  []
 
-[5] (./sigproc-sp.aux)
+[6
+
+] (./sigproc-sp.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3141 strings out of 493747
- 40753 string characters out of 3143546
- 101214 words of memory out of 3000000
- 6353 multiletter control sequences out of 15000+200000
+ 3142 strings out of 493747
+ 40768 string characters out of 3143546
+ 101219 words of memory out of 3000000
+ 6354 multiletter control sequences out of 15000+200000
  49956 words of font info for 69 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  39i,10n,26p,2055b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -743,10 +757,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2010/te
 xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2010/texmf-dis
 t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2010/texmf-dist/fonts
 /type1/urw/times/utmb8a.pfb>
-Output written on sigproc-sp.pdf (5 pages, 137999 bytes).
+Output written on sigproc-sp.pdf (6 pages, 139255 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
