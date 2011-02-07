@@ -1,0 +1,344 @@
+% THIS IS SIGPROC-SP.TEX - VERSION 3.1
+% WORKS WITH V3.2SP OF ACM_PROC_ARTICLE-SP.CLS
+% APRIL 2009
+%
+% It is an example file showing how to use the 'acm_proc_article-sp.cls' V3.2SP
+% LaTeX2e document class file for Conference Proceedings submissions.
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V3.2SP) *DOES NOT* produce:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) Page numbering
+% ---------------------------------------------------------------------------------------------------------------
+% It is an example which *does* use the .bib file (from which the .bbl file
+% is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission,
+% you need to 'insert'  your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% Questions regarding SIGS should be sent to
+% Adrienne Griscti ---> griscti@acm.org
+%
+% Questions/suggestions regarding the guidelines, .tex and .cls files, etc. to
+% Gerald Murray ---> murray@hq.acm.org
+%
+% For tracking purposes - this is V3.1SP - APRIL 2009
+
+\documentclass{acm_proc_article-sp}
+
+%\usepackage{url}
+\usepackage[hyphens]{url}
+\usepackage{textcomp}
+
+\begin{document}
+
+\title{Tracking Provenance In An Entity-Consolidating RESTful Read/Write Web Service For RDF Video Annotations}
+%
+% You need the command \numberofauthors to handle the 'placement
+% and alignment' of the authors beneath the title.
+%
+% For aesthetic reasons, we recommend 'three authors at a time'
+% i.e. three 'name/affiliation blocks' be placed beneath the title.
+%
+% NOTE: You are NOT restricted in how many 'rows' of
+% "name/affiliations" may appear. We just ask that you restrict
+% the number of 'columns' to three.
+%
+% Because of the available 'opening page real-estate'
+% we ask you to refrain from putting more than six authors
+% (two rows with three columns) beneath the article title.
+% More than six makes the first-page appear very cluttered indeed.
+%
+% Use the \alignauthor commands to handle the names
+% and affiliations for an 'aesthetic maximum' of six authors.
+% Add names, affiliations, addresses for
+% the seventh etc. author(s) as the argument for the
+% \additionalauthors command.
+% These 'additional authors' will be output/set for you
+% without further effort on your part as the last section in
+% the body of your article BEFORE References or any Appendices.
+
+\numberofauthors{3} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+% 1st. author
+\alignauthor Thomas Steiner\\
+       \affaddr{Universitat Polit{\'e}cnica de Catalunya}\\
+       \affaddr{Department LSI}\\
+       \affaddr{08034 Barcelona, Spain}\\
+       \email{tsteiner@lsi.upc.edu}
+\alignauthor Your Name\\
+       \affaddr{Affiliation}\\
+       \affaddr{Address}\\
+       \affaddr{Address}\\
+       \email{you@example.org}
+\alignauthor Joaquim Gabarr\'{o}\\
+       \affaddr{Universitat Polit{\'e}cnica de Catalunya}\\
+       \affaddr{Department LSI}\\
+       \affaddr{08034 Barcelona, Spain}\\
+       \email{gabarro@lsi.upc.edu}
+}
+% Just remember to make sure that the TOTAL number of authors
+% is the number that will appear on the first page PLUS the
+% number that will appear in the \additionalauthors section.
+
+\maketitle
+\begin{abstract}
+Using Natural Language Processing or URI Lookup third party Web services, converting legacy unstructured data into Linked Data is a relatively straight-forward task. In this paper we first present an approach to first consolidate entities found by such Web services when being used in parallel, and then describe how one can keep track of provenance at the same time. We have implemented a RESTful Web service for the automatic RDF annotation of YouTube videos, and discuss how in a read/write environment manual changes to automatically generated RDF annotations can be tracked. 
+\end{abstract}
+
+% A category with the (minimum) three required fields
+\category{H.3}{Information Storage and Retrieval}{On-line Information Services}
+
+\terms{Experimentation}
+
+\keywords{RDF, LOD, Linked Data, Semantic Web, NLP, Video} % NOT required for Proceedings
+
+\section{Introduction}\label{sec:introduction}
+With SemWebVid \cite{Steiner:SemWebVid} we introduced a client-side interactive Ajax application for the automatic generation of RDF video annotations. For this paper we have re-implemented and vastly improved the annotation logic on the server-side, resulting in a RESTful read/write-enabled Web service for RDF video annotations. A YouTube video is described by a Google Data Atom feed\footnote{E.g., \url{http://gdata.youtube.com/feeds/api/videos/Rq1dow1vTHY}}. In order to semantically annotate the various elements of this feed, we concentrated on the following fields (in XPath syntax): title \texttt{/entry/media:group/media:title}, description \texttt{/entry/\-media:\-group/media:description}, tags \texttt{/entry/media:\-group/media:\-keywords}. YouTube offers an automatic audio transcription service and users can also upload audio transcriptions on their own. This allows for closed captions in several languages (we differentiate between subtitles and closed captions, where subtitles are hard-encoded into the video, and closed captions separate resources). In addition to the previously mentioned elements of the Google Data Atom feed, we thus use closed captions\footnote{E.g., \url{http://www.youtube.com/watch_ajax?action_get_caption_track_all&v=Rq1dow1vTHY}} when they are available.
+
+\section{Web services for converting unstructured data into Linked Data}\label{sec:services}
+We differentiate between Natural Language Processing (NLP) Web services and URI Lookup Web services. The NLP Web services that we use for our experiemtns take a text fragment as an input and perform Named Entity Extraction (NER) on it and link extracted entities back into the Linked Open Data cloud\footnote{\url{http://lod-cloud.net/}}. For NLP Web services, we use OpenCalais, Zemanta, and AlchemyAPI\footnote{\url{http://www.opencalais.com/documentation/calais-web-service-api}, \url{http://developer.zemanta.com/docs/}, \url{http://www.alchemyapi.com/api/entity/}}. The URI Lookup Web services take a term as an input, and return the set of URIs that most probably represent this term. For URI Lookup Web services, we use Freebase, DBpedia Lookup, Sindice, and Uberblic\footnote{\url{http://wiki.freebase.com/wiki/Search}, \url{http://lookup.dbpedia.org}, \url{http://sindice.com/developers/api#SindicePublicAPI-TermSearch}, \url{http://uberblic.org/developers/apis/search/}}. For both families of services, we use these services in parallel, aiming for the emergence effect in the sense of Aristotle\footnote{Aristotle, Metaphysics, Book H 1045a 8-10: "[...] the totality is not, as it were, a mere heap, but the whole is something besides the parts [...]"}. In the next section we describe our strategies for entity consolidation. 
+
+\section{Entity Consolidation}\label{sec:consolidation}
+First, we present our approach how to consolidate entities from URI Lookup Web services.
+\subsection{Entitiy Consolidation For URI Lookup Web Services}\label{sec:consolidation1}
+As as first step we have implemented a wrapper for all four URI Lookup services that aligns the particular service's output to a common output format. This format is the least common multiple of the information of all feeds. For our experiments we agreed on the JSON format below (the examples below use the term \texttt{Google Translate} to illustrate the approach):
+\begin{verbatim}
+[
+  {
+    "name": "Google Translate",
+    "uris": [
+      "http://dbpedia.org/resource/Google_Translate"
+    ],
+    "provenance": "freebase,uberblic,dbpedia",
+    "relevance": 0.75
+  }
+]
+\end{verbatim}
+The corresponding call to our wrapper API that calls all four Web services in the background is at \texttt{GET} \url{http://localhost:3000/uri-lookup/combined/Google/%20Translate} (the particular results from each service are available at \url{http://localhost:3000/uri-lookup/{service_name}/Google%20Translate}). As can be seen in the example above, already at the lowest data representation level we maintain provenance information (Sindice delivered a different result, and is thus not in the list). In order to agree on a winner entity, a majority-based voting system is used. The problem, however, is that both Freebase and Uberblic return results in their own namespaces (for \texttt{Google Translate} the results are \url{http://freebase.com/en/google_translate}, \url{http://uberblic.org/resource/67dc7037-6ae9-406c-86ce-997b905badc8#thing}), whereas Sindice and DBpedia Lookup return results from DBpedia (obvious for DBpedia Lookup, and among other results for Sindice). Freebase and Uberblic interlink their results with DBpedia at an \texttt{owl:sameAs} level for Freebase, and by referencing the source (\texttt{umeta:source\_uri}) for Uberblic, so by retrieving the referenced resources in the services' namespaces we can map back to DBpedia URIs and match all four services' results at this level. Each service's result contributes with a relevance of 0.25 to the final result, in the above example when three services agree on the same result, the resulting relevance is thus the sum of the singular relevance scores (0.75 in this case).
+
+\subsection{Entitiy Consolidation For NLP Web Services}\label{sec:consolidation2}
+In analogy to our approach to URI Lookup entity consolidation, we have implemented a wrapper API for the three NLP services. While the original calls to the particular NLP service are all HTTP \texttt{POST} based, we have implemented the wrapper \texttt{GET} based. The least common multiple of the particular results looks like this (shortened to one entity for the sake of legibility, the original result contained 7 entities, 6 directly relevant, and 1 related, but not directly relevant entity):
+\begin{verbatim}
+[ 
+  {
+    "name": "Google Translate",
+    "relevance": 0.7128319999999999,
+    "uris": [
+      {
+        "uri": "http://dbpedia.org/resource/Google_Translate",
+        "provenance": "alchemyapi"
+      },
+      {
+        "uri": "http://rdf.freebase.com/ns/en/google_translate",
+        "provenance": "zemanta"
+      }
+    ],
+    "provenance": "alchemyapi,zemanta"
+  }
+]
+\end{verbatim}
+These results came from a call to our wrapper API at \texttt{GET} \url{http://localhost:3000/entity-extraction/combined/Google%20Translate}, and as with URI Lookup the particular services' can be obtained at \url{http://localhost:3000/entity-extraction/{service_name}/Google%20Translate}. While AlchemyAPI and Zemanta return results from DBpedia and other interlinked LOD cloud resources, OpenCalais returns only results in its own namespace (e.g., \url{http://d.opencalais.com/er/company/ralg-tr1r/ce181d44-1915-3387-83da-0dc4ec01c6da.rdf} for the company Google). While in that particular case retrieving the resource RDF representation and checking for \texttt{owl:sameAs} links to DBpedia is successful, in general we found OpenCalais URIs sometimes point to non-existant resources, or to not very rich resources like \url{http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b.html} for President Barack Obama, where the only information is that Barack Obama is of type person. In order to consolidate extracted entities, we use the following approach: we have a look at each of the extracted entities from service one and compare each entity's URIs with each URIs from each extracted entity from service two. To illustrate this, see the example below (shortened for the sake of legibility, the used text fragment contained a reference to the company Google).
+Results for the text fragment from AlchemyAPI:
+\begin{verbatim}
+{
+  "name": "google",
+  "relevance": 0.496061,
+  "uris": [
+    {
+      "uri": "http://dbpedia.org/resource/Google",
+      "provenance": "alchemyapi" 
+    },
+    {
+      "uri": "http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000042acea",
+      "provenance": "alchemyapi" 
+    },
+    {
+      "uri": "http://cb.semsol.org/company/google.rdf",
+      "provenance": "alchemyapi" 
+    } 
+  ],
+  "provenance": "alchemyapi" 
+}
+\end{verbatim}
+Results for the text fragment from Zemanta:
+\begin{verbatim}
+{
+  "name": "google inc.",
+  "relevance": 0.563132,
+  "uris": [
+    {
+      "uri": "http://rdf.freebase.com/ns/en/google",
+      "provenance": "zemanta" 
+    },
+    {
+      "uri": "http://dbpedia.org/resource/Google",
+      "provenance": "zemanta" 
+    },
+    {
+      "uri": "http://cb.semsol.org/company/google#self",
+      "provenance": "zemanta" 
+    } 
+  ],
+  "provenance": "zemanta" 
+}
+\end{verbatim}
+As can be seen the entity names mismatch (\texttt{google inc.} vs. \texttt{google}), however, going down the list of URIs for the entity, one can note a match via \url{http://dbpedia.org/resource/Google}. In addition to that one can also see two would-be matches (\url{http://cb.semsol.org/company/google.rdf} vs. \url{http://cb.semsol.org/company/google#self} and \url{http://rdf.freebase.com/ns/en/google} vs. \url{http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000042acea}), however, because of the inconsistent use of URIs when there are more than one URI available for the same entity hinders the match from being made. An additional retrieval of the resources would be necessary to detect that in the latter case \url{http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000042acea} redirects to \url{http://rdf.freebase.com/ns/en/google}, whereas the first example seems to be broken. The good thing, however, is that as soon as one match has been detected, one can consolidate the entities from both services. Note how the entity names mismatch (\texttt{google inc.} vs. \texttt{google}). The consolidated name is an array of all detected synonymous names. The consolidated relevance is then the average relevance of both services. In contrast to URI Lookup where we had to manually assign a relevance of 0.25 to each result because not all URI Lookup services included the concept of relevance in their results, with NLP services each service includes this concept, so we can directly use it. In our code the consolidated entities from service 1 and 2 are then in turn compared to extracted entities from service 3 and so on, in practice, however, due to the not always given interconnectedness of OpenCalais, there are no matches after having compared Zemanta-extracted entities with AlchemyAPI-extrated entities. As above with URI Lookup-detected entity consolidation, also with NLP-detected entity consolidation we maintain provenance information for each URI on the lowest data representation level.  
+
+It is to be noted that the results from URI Lookup are a subset of NLP in our case, however, while all URI Lookup services accept one-word arguments (e.g., \texttt{google}), only AlchemyAPI accepts one-word arguments, the two other services accept only non-trivial text fragments (e.g., \texttt{google is a company founded by larry page} works). 
+
+\section{Representing Videos in RDF}\label{sec:representing}
+In the following we present the particular components of the available video metadata and their representation in RDF.
+
+\subsection{Basic YouTube Metadata}\label{sec:youtube}
+We decided to use the W3C Ontology for Media Resources\cite{W3C:MediaOntology} as the central vocabulary, mainly because it already has a defined mapping not only for YouTube data, but also for many other existing metadata formats. "The ontology is supposed to foster the interoperability among various kinds of metadata formats currently used to describe media resources on the Web" (sic from the introduction of \cite{W3C:MediaOntology}). From the vocabulary we use the following fields: \texttt{ma:title}, \texttt{ma:creator}, \texttt{ma:createDate}, and \texttt{ma:description}, which, as outlined before, have direct mappings to YouTube data. 
+
+\subsection{YouTube Tags}\label{sec:youtube}
+In order to represent YouTube tags, or rather, semantically annotated YouTube tags, we use the Common Tag\cite{CommonTag:Spec} vocabulary. A resource is \texttt{ctag:tagged} with a \texttt{ctag:Tag}, which consists of a textual \texttt{ctag:label} pointing to a resource that specifies what the label \texttt{ctag:means}.
+
+\subsection{Entities In Video Fragments}
+A video fragment is a part of the whole video. In order to address a video fragment, we decided to use Media Fragment URIs\cite{W3C:MediaFrags}. Media Fragment URIs are also supported by the Ontology for Media Annotation in form of \texttt{ma:fragment}. In particular we use the temporal dimension (e.g., \url{http://example.org/video.webm#t=10,20}), which is defined by its start time and its end time relative to the whole vide play time. In addition to the temporal dimension, we also use the track dimension (e.g., \url{http://example.com/video.webm#track=audiotranscript}), which allows for addressing only the closed captions track (with timing information), or even the plaintext audio transcript.
+
+In order to annotate entities in a temporal video fragment, we also use the same concept of Common Tag as outlined in section \ref{sec:youtube}. We thus have (in Turtle syntax, left out prefixes for the sake of brefity):
+\begin{verbatim}
+<http://example.org/video.webm#t=10,20> a ma:fragment ;
+  ctag:tagged :tag .
+:tag a ctagTag ;
+  ctag:label "example" ;
+  ctag:means <http://example.org/example#> .
+\end{verbatim}
+
+\section{Tracking Provenance With Multiple Data Sources}
+As outlined before we use several data sources (Web services) in the background in order to deploy our own video annotation Web service. The simple example fact produced by our service that an \texttt{ma:fragment} is \texttt{ctag:tagged} with a \texttt{ctagTag} with the \texttt{ctag:label} in plaintext form \texttt{example}, which \texttt{ctag:means} an example entity represented by the URI \url{http://example.org/example#} might in consequence have been the result of up to in the concrete case seven agreeing or disagreeing Web services. In order to track the contributions of the various sources, we decided to use the Provenance Vocabulary\cite{Hartig:Provenance} by Hartig and Zhao. Even if the direct requests of our Web service were made against our wrappers (as outlined in sections \ref{sec:consolidation1} and \ref{sec:consolidation2}), we still want to credit back the results to the original calls to the third party Web services. We have two basic cases that affect the RDF that describes the data provenance, requests per HTTP \texttt{GET} and requests per HTTP \texttt{POST}. All URI Lookup services that we use are \texttt{GET}-based, all of our NLP services are \texttt{POST}-based. In order to make statements about a bundle of triples, we can put them in a named graph. We use the TriG\cite{Bizer:TriG} syntax. The example from above then looks like this:
+\begin{verbatim}
+:G = {
+  <http://example.org/video.webm#t=10,20> a ma:fragment ;
+    ctag:tagged :tag .
+  :tag a ctagTag ;
+    ctag:label "example" ;
+    ctag:means <http://example.org/example#> .
+} .
+\end{verbatim}
+\subsection{The Provenance Vocabulary}\label{provenance}
+In the following we outline the required steps in order to make statements about the provenance of a bundle of triples contained in a named graph \texttt{:G} that were generated using several HTTP \texttt{GET} requests to third party Web services. First, we state that \texttt{:G} is both a \texttt{prv:DataItem} and obviously an \texttt{rdfg:Graph}. \texttt{:G} is \texttt{prv:createdBy} the process of a \texttt{prv:DataCreation}. This \texttt{prv:DataCreation} is \texttt{prv:performedBy} a \texttt{prv:NonHumanActor}, a 
+\texttt{prvTypes:DataCreatingService} to be precise. This service is \texttt{prv:operatedBy} us (\url{http://tomayac.com/thomas_steiner.rdf#me}. Time is often important for provenance, so the \texttt{prv:performedAt} date of the \texttt{prv:DataCreation} needs to be saved. During the process of the \texttt{prv:DataCreation} there are \texttt{prv:usedData}, which are \texttt{prv:retrievedBy} a \texttt{prv:DataAcess} that is \texttt{prv:performedAt} a certain time, and \texttt{prv:performedBy} an actor and \texttt{prv:operatedBy} us (\url{http://tomayac.com/thomas_steiner.rdf#me}. For the \texttt{prv:DataAccess} we \texttt{prv:accessedService} from a \texttt{prv:DataProvidingService} of which we \texttt{prv:accessedResource} at a certain \texttt{irw:WebResource}. Therefore we \texttt{prvTypes:exchangedHTTPMessage} which is an \texttt{http:Request} using \texttt{http:httpVersion} "1.1" and the \texttt{http:methodName} "GET".
+See Annex \ref{sec:appendix} for an overview of the necessary provenance RDF.
+
+\subsection{The Need For Providing Provenance Metadata}
+Hartig et al. mention in \cite{ipaw10:olaf} some reasons that justify the need for provenance metadata, among those linked dataset replication and distribution on the Web with not necessarily always the same namespaces. Based on the same source data, different copies of a linked dataset can be created with different degrees of interconnectedness by different publishers. We add to this list the automatic conversion of legacy unstructured data to Linked Data with heuristics, where, as in our case, extracted entities while still being consolidated and backed up by different data sources, might still be wrong. Especially with our "mash-up"-like approach it is very desirable to be able to track back to the concrete source where a certain piece of information might have come from.
+
+\section{Related Work}\label{related}
+
+\section{Conclusion}\label{conclusion}
+
+%\end{document}  % This is where a 'short' article might terminate
+
+%ACKNOWLEDGMENTS are optional
+\section{Acknowledgments}\label{sec:acknowledgments}
+This work is partly funded by the EU FP7 I-SEARCH project (project reference 248296).
+
+%
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+\bibliography{sigproc-sp}  % sigproc.bib is the name of the Bibliography in this case
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
+%APPENDICES are optional
+
+\appendix
+%Appendix A
+\section{Provenance RDF Overview}\label{sec:appendix}
+Shortened overview of the provenance RDF in Turtle syntax for a YouTube tag with the label \texttt{obama} and the assigned meaning \url{http://dbpedia.org/resource/Barack_Obama} (only two of the \texttt{prv:usedData} sources are mentioned):
+\begin{verbatim}
+:G = {
+  <http://gdata.youtube.com/feeds/api/videos/3PuHGKnboNY> ctag:tagged :tag .
+  :tag
+    a ctag:Tag ;
+    ctag:label "obama" ;
+    ctag:means <http://dbpedia.org/resource/Barack_Obama> ;
+} .
+:G
+  a prv:DataItem ;
+  a rdfg:Graph ;
+  prv:createdBy [
+    a prv:DataCreation ;
+    prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;
+    prv:performedBy [
+      a prv:NonHumanActor ;
+      a prvTypes:DataCreatingService ;
+      prv:operatedBy <http://tomayac.com/thomas_steiner.rdf#me> .
+    ] ;
+    prv:usedData [
+      prv:retrievedBy [
+        a prv:DataAcess ;
+        prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;
+        prv:performedBy [
+          prv:operatedBy <http://tomayac.com/thomas_steiner.rdf#me> .
+        ] ;
+        prv:accessedService <http://api.freebase.com/api/service/search> ;
+        prv:accessedResource <http://api.freebase.com/api/service/search?format=json&query=obama> ;
+        prvTypes:exchangedHTTPMessage [
+          a http:Request ;
+          http:httpVersion "1.1" ;
+          http:methodName "GET" ;
+          http:headers (
+            [
+              http:fieldName "Host" ;
+              http:fieldValue "api.freebase.com" ;
+              http:headerName <http://www.w3.org/2008/http-header#host> ;
+            ]
+          )
+        ] ;
+      ] ;
+    ] ;
+    prv:usedData [
+      prv:retrievedBy [
+        a prv:DataAcess ;
+        prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;
+        prv:performedBy [
+          prv:operatedBy <http://tomayac.com/thomas_steiner.rdf#me> .
+        ] ;
+        prv:accessedService <http://lookup.dbpedia.org/> ;
+        prv:accessedResource <http://lookup.dbpedia.org/api/search.asmx/KeywordSearch?QueryString=obama> ;
+        prvTypes:exchangedHTTPMessage [
+          a http:Request ;
+          http:httpVersion "1.1" ;
+          http:methodName "GET" ;
+          http:headers (
+            [
+              http:fieldName "Host" ;
+              http:fieldValue "lookup.dbpedia.org" ;
+              http:headerName <http://www.w3.org/2008/http-header#host> ;
+            ]
+          )
+        ] ;
+      ] ;
+    ] ;
+  ] .
+} .
+\end{verbatim}
+
+\balancecolumns
+\end{document}

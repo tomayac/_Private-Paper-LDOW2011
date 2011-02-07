@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{CommonTag:Spec}
+{Common Tag Specification}, retrieved February 7, 2011.
+\newblock \url{http://commontag.org/Specification}.
+
+\bibitem{Bizer:TriG}
+C.~Bizer and R.~Cyganiak.
+\newblock {The TriG Syntax}, July 30, 2007.
+\newblock \url{http://www4.wiwiss.fu-berlin.de/bizer/TriG/}.
+
+\bibitem{ipaw10:olaf}
+O.~Hartig and J.~Zhao.
+\newblock Publishing and consuming provenance metadata on the web of linked
+  data.
+\newblock In {\em Proceedings of The third International Provenance and
+  Annotation Workshop}, Troy, NY, USA, 2010.
+
+\bibitem{Hartig:Provenance}
+O.~Hartig and J.~Zhao.
+\newblock {Provenance Vocabulary Core Ontology Specification}, January 25,
+  2011.
+\newblock \url{http://purl.org/net/provenance/ns}.
+
+\bibitem{Steiner:SemWebVid}
+T.~Steiner.
+\newblock Semwebvid - making video a first class semantic web citizen and a
+  first class web bourgeois.
+\newblock In {\em 9th International Semantic Web Conference (ISWC2010)},
+  November 2010.
+
+\bibitem{W3C:MediaFrags}
+W3C.
+\newblock {Media Fragments URI}.
+\newblock W3C Working Draft, December 8, 2010.
+\newblock
+  \url{http://www.w3.org/2008/WebVideo/Fragments/WD-media-fragments-spec/}.
+
+\bibitem{W3C:MediaOntology}
+W3C.
+\newblock {Ontology for Media Resource}.
+\newblock W3C Working Draft, June 8, 2010.
+\newblock \url{http://www.w3.org/TR/2010/WD-mediaont-10-20100608/}.
+
+\end{thebibliography}
