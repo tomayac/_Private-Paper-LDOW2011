@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  8 FEB 2011 12:19
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  8 FEB 2011 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -367,16 +367,9 @@ s / api / videos /
  []
 
 
-Overfull \hbox (139.26082pt too wide) in paragraph at lines 112--113
-\T1/aer/m/n/9 (\T1/aett/m/n/9 /entry/media:group/media:title\T1/aer/m/n/9 ), de
--scrip-tion (\T1/aett/m/n/9 /entry/media:group/media:description\T1/aer/m/n/9 )
-,
- []
-
-
-Overfull \hbox (1.03395pt too wide) in paragraph at lines 112--113
-\T1/aer/m/n/9 and tags (\T1/aett/m/n/9 /entry/media:group/media:keywords\T1/aer
-/m/n/9 ). YouTube
+Overfull \hbox (2.91289pt too wide) in paragraph at lines 112--113
+\T1/aer/m/n/9 de-scrip-tion (\T1/aett/m/n/9 /entry/media:group/media:descriptio
+n\T1/aer/m/n/9 ), and
  []
 
 
@@ -755,7 +748,7 @@ sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr
 /local/texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/
 texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive
 /2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on sigproc-sp.pdf (7 pages, 152377 bytes).
+Output written on sigproc-sp.pdf (7 pages, 152358 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
