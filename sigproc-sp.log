@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  7 FEB 2011 23:51
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  8 FEB 2011 01:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -258,11 +258,7 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
 )
-(./sigproc-sp.aux
-
-LaTeX Warning: Label `sec:youtube' multiply defined.
-
-)
+(./sigproc-sp.aux)
 \openout1 = `sigproc-sp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -283,8 +279,7 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 35.
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 35.
-
-(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
 \scratchdimen=\dimen123
@@ -381,395 +376,408 @@ y/media:-group/media:-
  []
 
 
-Overfull \hbox (6.31956pt too wide) in paragraph at lines 114--114
+Overfull \hbox (6.31956pt too wide) in paragraph at lines 116--116
 []\secfnt WEB SER-VICES FOR CON-VERT-ING UN-
  []
 
 
-Overfull \hbox (12.93178pt too wide) in paragraph at lines 114--114
+Overfull \hbox (12.93178pt too wide) in paragraph at lines 116--116
 \secfnt STRUC-TURED DATA INTO LINKED DATA 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 [][]$\T1/aett/m/n/9 http : / / www . opencalais . com / documentation / calais 
 -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 [][]$\T1/aett/m/n/9 http : / / wiki . freebase . com / wiki / Search$\T1/aer/m/
 n/9 , $\T1/aett/m/n/9 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 \T1/aett/m/n/9 / / lookup . dbpedia . org$\T1/aer/m/n/9 , $\T1/aett/m/n/9 http 
 : / / sindice . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 \T1/aett/m/n/9 developers / api # SindicePublicAPI -[] TermSearch$\T1/aer/m/n/9
  ,
  []
 
 
-Overfull \hbox (4.52557pt too wide) in paragraph at lines 115--116
+Overfull \hbox (4.52557pt too wide) in paragraph at lines 117--118
 \T1/aer/m/n/9 We dif-fer-en-ti-ate be-tween Nat-u-ral Lan-guage Pro-cess-ing (N
 LP)
  []
 
 
-Overfull \hbox (8.68542pt too wide) in paragraph at lines 119--119
-[]\secfnt Entitiy Con-sol-i-da-tion For URI Lookup Web
- []
+Underfull \vbox (badness 1509) has occurred while \output is active []
 
-[1{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Overfull \hbox (5.22821pt too wide) in paragraph at lines 132--132
+Overfull \hbox (8.68542pt too wide) in paragraph at lines 121--121
+[]\secfnt Entitiy Con-sol-i-da-tion For URI Lookup Web
+ []
+
+
+Overfull \hbox (5.22821pt too wide) in paragraph at lines 134--134
 []      \T1/aett/m/n/9 "http://dbpedia.org/resource/Google_Translate"[] 
  []
 
 
-Overfull \hbox (1.05965pt too wide) in paragraph at lines 133--134
+Overfull \hbox (1.05965pt too wide) in paragraph at lines 135--136
 \T1/aer/m/n/9 Web ser-vices in the back-ground is at \T1/aett/m/n/9 GET $http :
  / / localhost :
  []
 
 
-Overfull \hbox (4.97197pt too wide) in paragraph at lines 133--134
+Overfull \hbox (4.97197pt too wide) in paragraph at lines 135--136
 \T1/aett/m/n/9 3000 / uri -[] lookup / combined / Google / %20Translate$ \T1/ae
 r/m/n/9 (the par-
  []
 
 
-Overfull \hbox (44.89555pt too wide) in paragraph at lines 133--134
+Overfull \hbox (44.89555pt too wide) in paragraph at lines 135--136
 \T1/aett/m/n/9 localhost : 3000 / uri -[] lookup / {service _ name} / Google % 
 20Translate$\T1/aer/m/n/9 ).
  []
 
 
-Overfull \hbox (40.2397pt too wide) in paragraph at lines 133--134
-\T1/aett/m/n/9 uberblic . org / resource / 67dc7037 -[] 6ae9 -[] 406c -[] 86ce 
--[] 997b905badc8 #
+Overfull \hbox (10.05031pt too wide) in paragraph at lines 135--136
+\T1/aett/m/n/9 freebase . com / en / google _ translate$\T1/aer/m/n/9 , $\T1/ae
+tt/m/n/9 http : / / uberblic . org /
  []
 
 
-Overfull \hbox (52.38748pt too wide) in paragraph at lines 155--155
+Overfull \hbox (8.66814pt too wide) in paragraph at lines 135--136
+\T1/aett/m/n/9 resource / 67dc7037 -[] 6ae9 -[] 406c -[] 86ce -[] 997b905badc8 
+# thing$\T1/aer/m/n/9 ),
+ []
+
+
+Overfull \hbox (52.38748pt too wide) in paragraph at lines 157--157
 []        \T1/aett/m/n/9 "uri": "http://dbpedia.org/resource/Google_Translate",
 [] 
  []
 
 
-Overfull \hbox (61.81934pt too wide) in paragraph at lines 155--155
+Overfull \hbox (61.81934pt too wide) in paragraph at lines 157--157
 []        \T1/aett/m/n/9 "uri": "http://rdf.freebase.com/ns/en/google_translate
 ",[] 
  []
 
 
-Overfull \hbox (24.59192pt too wide) in paragraph at lines 156--158
+Overfull \hbox (24.59192pt too wide) in paragraph at lines 158--160
 \T1/aett/m/n/9 http : / / localhost : 3000 / entity -[] extraction / combined /
  Google %
  []
 
 
-Overfull \hbox (9.23972pt too wide) in paragraph at lines 156--158
+Overfull \hbox (9.23972pt too wide) in paragraph at lines 158--160
 \T1/aer/m/n/9 only re-sults in its own names-pace (e.g., $\T1/aett/m/n/9 http :
  / / d . opencalais .
  []
 
 
-Overfull \hbox (54.88748pt too wide) in paragraph at lines 156--158
+Overfull \hbox (54.88748pt too wide) in paragraph at lines 158--160
 \T1/aett/m/n/9 com / er / company / ralg -[] tr1r / ce181d44 -[] 1915 -[] 3387 
 -[] 83da -[] 0dc4ec01c6da .
  []
 
 
-Overfull \hbox (7.72821pt too wide) in paragraph at lines 156--158
+Overfull \hbox (7.72821pt too wide) in paragraph at lines 158--160
 \T1/aett/m/n/9 d . opencalais . com / pershash -[] 1 / cfcf1aa2 -[] de05 -[] 39
 39 -[] a7d5 -[]
  []
 
 
-Overfull \hbox (137.27417pt too wide) in paragraph at lines 178--178
+Overfull \hbox (137.27417pt too wide) in paragraph at lines 180--180
 []      \T1/aett/m/n/9 "uri": "http://rdf.freebase.com/ns/guid.9202a8c04000641f
 800000000042acea",[] 
  []
 
 
-Overfull \hbox (19.37599pt too wide) in paragraph at lines 178--178
+Overfull \hbox (19.37599pt too wide) in paragraph at lines 180--180
 []      \T1/aett/m/n/9 "uri": "http://cb.semsol.org/company/google.rdf",[] 
  []
 
 [2]
-Overfull \hbox (5.22821pt too wide) in paragraph at lines 200--200
+Overfull \hbox (5.22821pt too wide) in paragraph at lines 202--202
 []      \T1/aett/m/n/9 "uri": "http://rdf.freebase.com/ns/en/google",[] 
  []
 
 
-Overfull \hbox (24.09192pt too wide) in paragraph at lines 200--200
+Overfull \hbox (24.09192pt too wide) in paragraph at lines 202--202
 []      \T1/aett/m/n/9 "uri": "http://cb.semsol.org/company/google#self",[] 
  []
 
 
-Overfull \hbox (7.98196pt too wide) in paragraph at lines 201--202
+Overfull \hbox (7.98196pt too wide) in paragraph at lines 203--204
 \T1/aett/m/n/9 rdf . freebase . com / ns / en / google$ \T1/aer/m/n/9 vs. $\T1/
 aett/m/n/9 http : / / rdf . freebase .
  []
 
 
-Overfull \hbox (10.86932pt too wide) in paragraph at lines 201--202
+Overfull \hbox (10.86932pt too wide) in paragraph at lines 203--204
 \T1/aett/m/n/9 com / ns / guid . 9202a8c04000641f800000000042acea$\T1/aer/m/n/9
  ), how-ever,
  []
 
 
-Overfull \hbox (28.80785pt too wide) in paragraph at lines 201--202
+Overfull \hbox (28.80785pt too wide) in paragraph at lines 203--204
 \T1/aett/m/n/9 rdf . freebase . com / ns / guid . 9202a8c04000641f800000000042a
 cea$
  []
 
 
-Overfull \hbox (13.31685pt too wide) in paragraph at lines 201--202
+Overfull \hbox (13.31685pt too wide) in paragraph at lines 203--204
 \T1/aer/m/n/9 redi-rects to $\T1/aett/m/n/9 http : / / rdf . freebase . com / n
 s / en / google$\T1/aer/m/n/9 , whereas
  []
 
 
-Overfull \hbox (6.05212pt too wide) in paragraph at lines 209--210
+Overfull \hbox (6.05212pt too wide) in paragraph at lines 211--212
 \T1/aer/m/n/9 ser-vice names are "open-calais", "ze-manta", "alche-myapi",
  []
 
 
-Overfull \hbox (3.14415pt too wide) in paragraph at lines 209--210
+Overfull \hbox (3.14415pt too wide) in paragraph at lines 211--212
 \T1/aer/m/n/9 and "com-bined"): \T1/aett/m/n/9 GET $/entity -[] extraction / {s
 ervice _
  []
 
 
-Overfull \hbox (41.87599pt too wide) in paragraph at lines 217--218
+Overfull \hbox (41.87599pt too wide) in paragraph at lines 219--220
 \T1/aett/m/n/9 /youtube / video / {video _ id} / audiotranscription / {language
  _
  []
 
 
-Overfull \hbox (3.3907pt too wide) in paragraph at lines 223--224
+Overfull \hbox (3.3907pt too wide) in paragraph at lines 225--226
 \T1/aer/m/n/9 We de-cided to use the W3C On-tol-ogy for Me-dia Re-sources[11]
  []
 
-
-Overfull \hbox (15.82913pt too wide) in paragraph at lines 229--231
+[3]
+Overfull \hbox (15.82913pt too wide) in paragraph at lines 231--233
 \T1/aer/m/n/9 The cur-rent video an-no-ta-tion Web ser-vice is a re-implementat
 ion
  []
 
 
-Overfull \hbox (3.21117pt too wide) in paragraph at lines 229--231
+Overfull \hbox (3.21117pt too wide) in paragraph at lines 231--233
 \T1/aer/m/n/9 fined each line in the closed cap-tions track as an \T1/aett/m/n/
 9 event:Event\T1/aer/m/n/9 .
  []
 
 
-Overfull \hbox (4.10287pt too wide) in paragraph at lines 229--231
+Overfull \hbox (4.10287pt too wide) in paragraph at lines 231--233
 \T1/aer/m/n/9 pre-vi-ous SemWe-b-Vid im-ple-men-ta-tion we used \T1/aett/m/n/9 
 event:factor\T1/aer/m/n/9 ,
  []
 
-[3]
-Overfull \hbox (19.37599pt too wide) in paragraph at lines 237--237
+
+Overfull \hbox (19.37599pt too wide) in paragraph at lines 239--239
 []\T1/aett/m/n/9 <http://example.org/video.webm#t=10,20> a ma:fragment ;[] 
  []
 
 
-Overfull \hbox (2.63632pt too wide) in paragraph at lines 239--239
+Overfull \hbox (2.63632pt too wide) in paragraph at lines 241--241
 []\secfnt TRACKING PROVE-NANCE WITH MUL-
  []
 
 
-Overfull \hbox (28.80785pt too wide) in paragraph at lines 249--249
+Overfull \hbox (28.80785pt too wide) in paragraph at lines 251--251
 []  \T1/aett/m/n/9 <http://example.org/video.webm#t=10,20> a ma:fragment ;[] 
  []
 
 
-Overfull \hbox (63.16754pt too wide) in paragraph at lines 251--254
+Overfull \hbox (63.16754pt too wide) in paragraph at lines 253--256
 \T1/aett/m/n/9 prv:performedBy \T1/aer/m/n/9 a \T1/aett/m/n/9 prv:NonHumanActor
 \T1/aer/m/n/9 , a \T1/aett/m/n/9 prvTypes:DataCreatingService
  []
 
 
-Overfull \hbox (26.32161pt too wide) in paragraph at lines 251--254
+Overfull \hbox (26.32161pt too wide) in paragraph at lines 253--256
 \T1/aer/m/n/9 a cer-tain time, and \T1/aett/m/n/9 prv:performedBy \T1/aer/m/n/9
  an ac-tor and \T1/aett/m/n/9 prv:operatedBy
  []
 
 
-Overfull \hbox (72.98839pt too wide) in paragraph at lines 251--254
+Overfull \hbox (72.98839pt too wide) in paragraph at lines 253--256
 \T1/aett/m/n/9 prv:DataAccess \T1/aer/m/n/9 we \T1/aett/m/n/9 prv:accessedServi
 ce \T1/aer/m/n/9 from a \T1/aett/m/n/9 prv:DataProvidingService
  []
 
 
-Overfull \hbox (23.88478pt too wide) in paragraph at lines 251--254
+Overfull \hbox (23.88478pt too wide) in paragraph at lines 253--256
 \T1/aer/m/n/9 of which we \T1/aett/m/n/9 prv:accessedResource \T1/aer/m/n/9 at 
 a cer-tain \T1/aett/m/n/9 irw:WebResource\T1/aer/m/n/9 .
  []
 
 
-Overfull \hbox (42.80226pt too wide) in paragraph at lines 251--254
+Overfull \hbox (42.80226pt too wide) in paragraph at lines 253--256
 \T1/aett/m/n/9 http:Request \T1/aer/m/n/9 us-ing \T1/aett/m/n/9 http:httpVersio
 n \T1/aer/m/n/9 "1.1" and the \T1/aett/m/n/9 http:methodName
  []
 
 
-Overfull \hbox (38.2397pt too wide) in paragraph at lines 256--257
+Overfull \hbox (38.2397pt too wide) in paragraph at lines 258--259
 \T1/aett/m/n/9 / / rdf . freebase . com / ns / guid . 9202a8c04000641f800000000
 042acea$
  []
 
 
-Overfull \hbox (165.56973pt too wide) in paragraph at lines 276--276
+Overfull \hbox (165.56973pt too wide) in paragraph at lines 278--278
 []  \T1/aett/m/n/9 <http://gdata.youtube.com/feeds/api/videos/3PuHGKnboNY> ctag
 :tagged :tag_corrected .[] 
  []
 
 
-Overfull \hbox (24.09192pt too wide) in paragraph at lines 276--276
+Overfull \hbox (24.09192pt too wide) in paragraph at lines 278--278
 []    \T1/aett/m/n/9 ctag:means <http://rdf.freebase.com/rdf/en.google> ;[] 
  []
 
-
-Overfull \hbox (33.52377pt too wide) in paragraph at lines 276--276
+[4]
+Overfull \hbox (33.52377pt too wide) in paragraph at lines 278--278
 []    \T1/aett/m/n/9 prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;[] 
  []
 
-[4]
-Overfull \hbox (3.27455pt too wide) in paragraph at lines 279--279
+
+Overfull \hbox (34.2684pt too wide) in paragraph at lines 279--280
+\T1/aett/m/n/9 prv:HumanActor\T1/aer/m/n/9 , or in the case of a non-anonymous 
+\T1/aett/m/n/9 prv:HumanActor\T1/aer/m/n/9 ,
+ []
+
+
+Overfull \hbox (3.27455pt too wide) in paragraph at lines 281--281
 []\secfnt The Need For Pro-vid-ing Prove-nance Meta-
  []
 
-(./sigproc-sp.bbl [5])
-Overfull \hbox (7.39705pt too wide) in paragraph at lines 315--316
+[5] (./sigproc-sp.bbl)
+Overfull \hbox (7.39705pt too wide) in paragraph at lines 320--321
 \T1/aer/m/n/9 mean-ing $\T1/aett/m/n/9 http : / / dbpedia . org / resource / Ba
 rack _ Obama$ \T1/aer/m/n/9 (only
  []
 
 
-Overfull \hbox (118.41046pt too wide) in paragraph at lines 383--383
+Overfull \hbox (118.41046pt too wide) in paragraph at lines 388--388
 []  \T1/aett/m/n/9 <http://gdata.youtube.com/feeds/api/videos/3PuHGKnboNY> ctag
 :tagged :tag .[] 
  []
 
 
-Overfull \hbox (38.2397pt too wide) in paragraph at lines 383--383
+Overfull \hbox (38.2397pt too wide) in paragraph at lines 388--388
 []    \T1/aett/m/n/9 ctag:means <http://dbpedia.org/resource/Barack_Obama> ;[] 
 
  []
 
 
-Overfull \hbox (33.52377pt too wide) in paragraph at lines 383--383
+Overfull \hbox (33.52377pt too wide) in paragraph at lines 388--388
 []    \T1/aett/m/n/9 prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;[] 
  []
 
 
-Overfull \hbox (66.53526pt too wide) in paragraph at lines 383--383
+Overfull \hbox (66.53526pt too wide) in paragraph at lines 388--388
 []      \T1/aett/m/n/9 prv:operatedBy <http://tomayac.com/thomas_steiner.rdf#me
 > .[] 
  []
 
 
-Overfull \hbox (52.38748pt too wide) in paragraph at lines 383--383
+Overfull \hbox (52.38748pt too wide) in paragraph at lines 388--388
 []        \T1/aett/m/n/9 prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;
 [] 
  []
 
 
-Overfull \hbox (85.39897pt too wide) in paragraph at lines 383--383
+Overfull \hbox (85.39897pt too wide) in paragraph at lines 388--388
 []          \T1/aett/m/n/9 prv:operatedBy <http://tomayac.com/thomas_steiner.rd
 f#me> .[] 
  []
 
 
-Overfull \hbox (108.9786pt too wide) in paragraph at lines 383--383
+Overfull \hbox (108.9786pt too wide) in paragraph at lines 388--388
 []        \T1/aett/m/n/9 prv:accessedService <http://api.freebase.com/api/servi
 ce/search> ;[] 
  []
 
 
-Overfull \hbox (226.87679pt too wide) in paragraph at lines 383--383
+Overfull \hbox (226.87679pt too wide) in paragraph at lines 388--388
 []        \T1/aett/m/n/9 prv:accessedResource <http://api.freebase.com/api/serv
 ice/search?format=json&query=obama> ;[] 
  []
 
 
-Overfull \hbox (104.26268pt too wide) in paragraph at lines 383--383
+Overfull \hbox (104.26268pt too wide) in paragraph at lines 388--388
 []              \T1/aett/m/n/9 http:headerName <http://www.w3.org/2008/http-hea
 der#host> ;[] 
  []
 
 
-Overfull \hbox (52.38748pt too wide) in paragraph at lines 383--383
+Overfull \hbox (52.38748pt too wide) in paragraph at lines 388--388
 []        \T1/aett/m/n/9 prv:performedAt "2011-02-07T12:42:30Z"^^xsd:dateTime ;
 [] 
  []
 
 
-Overfull \hbox (85.39897pt too wide) in paragraph at lines 383--383
+Overfull \hbox (85.39897pt too wide) in paragraph at lines 388--388
 []          \T1/aett/m/n/9 prv:operatedBy <http://tomayac.com/thomas_steiner.rd
 f#me> .[] 
  []
 
 
-Overfull \hbox (33.52377pt too wide) in paragraph at lines 383--383
+Overfull \hbox (33.52377pt too wide) in paragraph at lines 388--388
 []        \T1/aett/m/n/9 prv:accessedService <http://lookup.dbpedia.org/> ;[] 
  []
 
 
-Overfull \hbox (259.88828pt too wide) in paragraph at lines 383--383
+Overfull \hbox (259.88828pt too wide) in paragraph at lines 388--388
 []        \T1/aett/m/n/9 prv:accessedResource <http://lookup.dbpedia.org/api/se
 arch.asmx/KeywordSearch?QueryString=obama> ;[] 
  []
 
 
-Overfull \hbox (5.22821pt too wide) in paragraph at lines 383--383
+Overfull \hbox (5.22821pt too wide) in paragraph at lines 388--388
 []              \T1/aett/m/n/9 http:fieldValue "lookup.dbpedia.org" ;[] 
  []
 
 
-Overfull \hbox (104.26268pt too wide) in paragraph at lines 383--383
+Overfull \hbox (104.26268pt too wide) in paragraph at lines 388--388
 []              \T1/aett/m/n/9 http:headerName <http://www.w3.org/2008/http-hea
 der#host> ;[] 
  []
 
-[6] (./sigproc-sp.aux)
+[6] [7
 
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+] (./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
- 3147 strings out of 493747
- 40852 string characters out of 3143546
- 101238 words of memory out of 3000000
- 6359 multiletter control sequences out of 15000+200000
+ 3149 strings out of 493747
+ 40892 string characters out of 3143546
+ 101217 words of memory out of 3000000
+ 6361 multiletter control sequences out of 15000+200000
  49956 words of font info for 69 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 39i,10n,26p,2055b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/tex
-live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
-010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/201
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2010/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2010/te
-xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2010/texmf-dis
-t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2010/texmf-dist/fonts
-/type1/urw/times/utmb8a.pfb>
-Output written on sigproc-sp.pdf (6 pages, 145986 bytes).
+ 39i,10n,26p,2052b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/
+8r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9
+.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><
+/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
+sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr
+/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/l
+ocal/texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/te
+xlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2
+010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+Output written on sigproc-sp.pdf (7 pages, 148782 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
