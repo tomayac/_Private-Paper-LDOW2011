@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  9 FEB 2011 14:22
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  9 FEB 2011 14:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -572,12 +572,12 @@ Overfull \hbox (2.63632pt too wide) in paragraph at lines 251--251
 []\secfnt TRACKING PROVE-NANCE WITH MUL-
  []
 
-
+[4]
 Overfull \hbox (28.80785pt too wide) in paragraph at lines 261--261
 []  \T1/aett/m/n/9 <http://example.org/video.webm#t=10,20> a ma:fragment ;[] 
  []
 
-[4]
+
 Overfull \hbox (18.35875pt too wide) in paragraph at lines 265--267
 \T1/aett/m/n/9 prv:DataCreation\T1/aer/m/n/9 . This \T1/aett/m/n/9 prv:DataCrea
 tion \T1/aer/m/n/9 is \T1/aett/m/n/9 prv:performedBy
@@ -640,10 +640,10 @@ Overfull \hbox (4.2984pt too wide) in paragraph at lines 313--314
 \T1/aer/m/n/9 by the EU FP7 I-SEARCH project (project ref-er-ence 248296). 
  []
 
-(./sigproc-sp.bbl)
+(./sigproc-sp.bbl [6])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
+
 Overfull \hbox (1.26816pt too wide) in paragraph at lines 333--334
 \T1/aer/m/n/9 mean-ing $\T1/aett/m/n/9 http : / / dbpedia . org / resource / Ba
 rack _ Obama$ \T1/aer/m/n/9 (for
@@ -725,7 +725,7 @@ Overfull \hbox (259.88828pt too wide) in paragraph at lines 401--401
 arch.asmx/KeywordSearch?QueryString=obama> ;[] 
  []
 
-
+[7]
 Overfull \hbox (5.22821pt too wide) in paragraph at lines 401--401
 []              \T1/aett/m/n/9 http:fieldValue "lookup.dbpedia.org" ;[] 
  []
@@ -736,29 +736,31 @@ Overfull \hbox (104.26268pt too wide) in paragraph at lines 401--401
 der#host> ;[] 
  []
 
-[7] (./sigproc-sp.aux) ) 
+[8
+
+] (./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
  3151 strings out of 493747
  40922 string characters out of 3143546
- 99227 words of memory out of 3000000
+ 100227 words of memory out of 3000000
  6363 multiletter control sequences out of 15000+200000
  49956 words of font info for 69 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 39i,10n,26p,2318b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/bas
-e/8r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x9.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
-pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
-></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><
-/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></u
-sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr
-/local/texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/
-texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive
-/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on sigproc-sp.pdf (7 pages, 153475 bytes).
+ 39i,10n,26p,2318b,253s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/
+8r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9
+.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><
+/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
+sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr
+/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/l
+ocal/texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/te
+xlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2
+010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+Output written on sigproc-sp.pdf (8 pages, 154101 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
