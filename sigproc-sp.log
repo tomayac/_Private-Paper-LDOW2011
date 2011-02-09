@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  8 FEB 2011 23:52
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  9 FEB 2011 14:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -540,8 +540,20 @@ Overfull \hbox (11.32974pt too wide) in paragraph at lines 226--227
  []
 
 
-Overfull \hbox (10.91547pt too wide) in paragraph at lines 228--229
-\T1/aett/m/n/9 GET $/youtube / video / {video _ id} / audiotranscription /
+Overfull \hbox (5.44334pt too wide) in paragraph at lines 226--227
+\T1/aer/m/n/9 for a video with a given video ID: \T1/aett/m/n/9 GET $/youtube /
+ videos /
+ []
+
+
+Overfull \hbox (5.44334pt too wide) in paragraph at lines 227--228
+\T1/aer/m/n/9 for a video with a given video ID: \T1/aett/m/n/9 GET $/youtube /
+ videos /
+ []
+
+
+Overfull \hbox (20.34732pt too wide) in paragraph at lines 228--229
+\T1/aett/m/n/9 GET $/youtube / videos / {video _ id} / audiotranscriptions /
  []
 
 
@@ -731,30 +743,26 @@ der#host> ;[]
 
 [8
 
-] (./sigproc-sp.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
- 3152 strings out of 493747
- 40933 string characters out of 3143546
+ 3151 strings out of 493747
+ 40922 string characters out of 3143546
  100227 words of memory out of 3000000
- 6364 multiletter control sequences out of 15000+200000
+ 6363 multiletter control sequences out of 15000+200000
  49956 words of font info for 69 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  39i,10n,26p,2318b,253s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/tex
-live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
-010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/201
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2010/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2010/te
-xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2010/texmf-dis
-t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2010/texmf-dist/fonts
-/type1/urw/times/utmb8a.pfb>
-Output written on sigproc-sp.pdf (8 pages, 153403 bytes).
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/
+8r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9
+.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><
+/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
+sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr
+/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/l
+ocal/texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/te
+xlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2
+010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+Output written on sigproc-sp.pdf (8 pages, 153549 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
