@@ -88,7 +88,7 @@
        \email{raphael.troncy@eurecom.fr}
 \alignauthor Joaquim Gabarr\'{o}\\
        \affaddr{Univ. Polit{\'e}cnica de Catalunya}\\
-       \affaddr{Department LSI}\\
+       \affaddr{ALBCOM and LSI Dept.}\\
        \affaddr{08034 Barcelona, Spain}\\
        \email{gabarro@lsi.upc.edu}
 }
@@ -118,15 +118,15 @@ We differentiate between Natural Language Processing (NLP) Web services and URI 
 
 The URI Lookup Web services take a term as an input, and return the set of URIs that most probably represent this term. We use Freebase, DBpedia Lookup, Sindice, and Uberblic\footnote{\url{http://wiki.freebase.com/wiki/Search}, \url{http://lookup.dbpedia.org/}, \url{http://sindice.com/developers/api#SindicePublicAPI-TermSearch}, \url{http://uberblic.org/developers/apis/search/}}. For both classes of services we use all services in parallel, aiming for the emergence effect in the sense of Aristotle\footnote{Aristotle, Metaphysics, Book H 1045a 8-10: "[\ldots] the totality is not, as it were, a mere heap, but the whole is something besides the parts [\ldots]"}. In the next section we describe our strategies for entity consolidation in both cases. 
 
-\section{Entity Consolidation}\label{sec:consolidation}
-We define the process of entity consolidation as the merge of entities, i.e., if two services extract the same entity from the same input text fragment or term, we say that the entity is consolidated.
+\section{Entity Consolidation (EC)}\label{sec:consolidation}
+We define the process of entity consolidation (EC) as the merge of entities, i.e., if two services extract the same entity from the same input text fragment or term, we say that the entity is consolidated.
 
 \subsection{Interplay Of the Web Services}\label{sec:interplay}
 As outlined before the metadata for a YouTube video are its title, its description, its tags, and its closed captions tracks. We analyze the tags one-by-one with URI Lookup Web services through our wrapper Web service, and afterwards we analyze the title combined with the description in a first, and the closed captions track in a second separate run through our wrapper Web service to the NLP Web services.
 
 In section \ref{sec:consolidation1} we present our approach for how to consolidate entities from URI Lookup Web services, followed by section \ref{sec:consolidation2} where we show our approach for NLP Web services.
 
-\subsection{Entitiy Consolidation For URI Lookup Web Services}\label{sec:consolidation1}
+\subsection{EC For URI Lookup Web Services}\label{sec:consolidation1}
 As as first step we have implemented a wrapper for all four URI Lookup services that assimilates the particular service's output to a common output format. This format is the least common multiple of the information of all Web service results. For our experiments we agreed on the JSON format below (the examples below use the term \texttt{Google Translate} to illustrate the approach):
 \begin{verbatim}
 [
@@ -142,7 +142,7 @@ As as first step we have implemented a wrapper for all four URI Lookup services 
 \end{verbatim} 
 The corresponding request to our wrapper API that calls all four URI Lookup Web services in the background is via \texttt{GET} \url{/uri-lookup/combined/Google%20Translate} (the particular results from each service are available at \url{/uri-lookup/{service_name}/Google%20Translate}). As can be seen in the example above, already at the lowest data representation level (JSON) we maintain provenance metadata (Sindice in the concrete case of the example delivers a different result, and is thus not in the provenance list). In order to agree on a winner entity, a majority-based voting system is used. The problem, however, is that both Freebase and Uberblic return results in their own namespaces (e.g., for \texttt{Google Translate} the results are \url{http://freebase.com/en/google_translate}, and \url{http://uberblic.org/resource/67dc7037-6ae9-406c-86ce-997b905badc8#thing}), whereas Sindice and DBpedia Lookup return results from DBpedia (obvious for DBpedia Lookup, and from DBpedia among also other results for Sindice). Freebase and Uberblic interlink their results with DBpedia at an \texttt{owl:sameAs} level in the case of Freebase, and by referencing the source (\texttt{umeta:source\_uri}) for Uberblic, so by retrieving and parsing the referenced resources in the services' namespaces we can map back to DBpedia URIs and thus match all four services' results on the DBpedia level. Each service's result contributes with a relevance of 0.25 to the final result, in the above example when three services agree on the same result, the resulting relevance is thus the sum of the singular relevance scores (0.75 in this case).
 
-\subsection{Entitiy Consolidation For NLP Web Services}\label{sec:consolidation2}
+\subsection{EC For NLP Web Services}\label{sec:consolidation2}
 In analogy to our approach to URI Lookup entity consolidation, we have implemented a wrapper API for the three NLP services. While the original calls to the particular NLP service are all HTTP \texttt{POST}-based, we have implemented the wrapper \texttt{GET}- and \texttt{POST}-based. The least common multiple of the particular results can be seen below (shortened to one entity with just two URIs for the sake of legibility, the original result contained seven entities, thereof six directly relevant, and one related, but not directly relevant entity):
 \begin{verbatim}
 [ 
@@ -289,7 +289,7 @@ Oftentimes completely automatically generated RDF video annotation files will ne
 \end{verbatim}
 Note how the \texttt{prv:DataCreation} no longer contains references to \texttt{prv:usedData}. Obviously the shown approach to identify a \texttt{prv:HumanActor} with her FOAF profile requires an authentication step, which might not always be wanted. One could think of a "John Doe"\footnote{\url{http://en.wikipedia.org/wiki/John_Doe}}-like anonymous pseudo-\texttt{prv:HumanActor}, or in the case of an intendedly non-anonymous \texttt{prv:HumanActor}, authentication methods like WebID\footnote{\url{http://www.w3.org/2005/Incubator/webid/charter}} could be used.
 
-\subsection{The Need For Providing Provenance Metadata}
+\subsection{Need For Provenance Metadata}
 Hartig et al. mention in \cite{ipaw10:olaf} some reasons that justify the need for provenance metadata, among those linked dataset replication and distribution on the Web with not necessarily always the same namespaces: based on the same source data, different copies of a linked dataset can be created with different degrees of interconnectedness by different publishers.
 
 We add to this list the automatic conversion of legacy unstructured data to Linked Data with heuristics, where, as in our case, extracted entities while being consolidated and backed up by different data sources, might still be wrong. Especially with our "mash-up"-like approach it is very desirable to be able to track back to the concrete source where a certain piece of information might have come from. This a), in order to correct the error at the root of our Web service (fighting the cause), b), in order to correct the concrete error in an RDF annotation (fighting the symptom), or c), probably the most important reason, to judge the trustworthiness and quality of a dataset.
@@ -310,7 +310,7 @@ In this paper we have shown how a concrete multi-source RESTful Web service can 
 
 %ACKNOWLEDGMENTS are optional
 \section{Acknowledgments}\label{sec:acknowledgments}
-We would like to thank Olaf Hartig from the Humboldt-Universit\"{a}t zu Berlin for his kind support with the correct use of the Provenance Vocabulary. This work is partly funded by the EU FP7 I-SEARCH project (project reference 248296).
+We would like to thank Olaf Hartig from the Humboldt-Universit\"{a}t zu Berlin for his kind support with the correct use of the Provenance Vocabulary. J. Gabarr\'{o} is partially supported by TIN-2007-66523 (FORMALISM) and SGR 2009-2015 (ALBCOM). T. Steiner is partially funded by the EU FP7 I-SEARCH project (project reference 248296).
 
 %
 % The following two commands are all you need in the
