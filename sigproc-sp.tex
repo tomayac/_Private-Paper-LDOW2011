@@ -363,11 +363,12 @@ Shortened overview of the provenance RDF in Turtle syntax for a YouTube tag with
           a http:Request ;
           http:httpVersion "1.1" ;
           http:methodName "GET" ;
+          http:mthd <http://www.w3.org/2008/http-methods#GET> ;
           http:headers (
             [
               http:fieldName "Host" ;
               http:fieldValue "api.freebase.com" ;
-              http:headerName <http://www.w3.org/2008/http-header#host> ;
+              http:hdrName <http://www.w3.org/2008/http-header#host> ;
             ]
           )
         ] ;
@@ -386,11 +387,12 @@ Shortened overview of the provenance RDF in Turtle syntax for a YouTube tag with
           a http:Request ;
           http:httpVersion "1.1" ;
           http:methodName "GET" ;
+          http:mthd <http://www.w3.org/2008/http-methods#GET> ;
           http:headers (
             [
               http:fieldName "Host" ;
               http:fieldValue "lookup.dbpedia.org" ;
-              http:headerName <http://www.w3.org/2008/http-header#host> ;
+              http:hdrName <http://www.w3.org/2008/http-header#host> ;
             ]
           )
         ] ;
