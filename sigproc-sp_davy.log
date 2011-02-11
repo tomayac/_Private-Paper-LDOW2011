@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  10 FEB 2011 15:20
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  10 FEB 2011 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -673,7 +673,7 @@ b></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
 usr/local/texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/loc
 al/texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texl
 ive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on sigproc-sp_davy.pdf (7 pages, 152279 bytes).
+Output written on sigproc-sp_davy.pdf (7 pages, 152270 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
