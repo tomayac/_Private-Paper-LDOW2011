@@ -355,7 +355,7 @@ As stated before the current video annotation Web service is a re-implementation
 
 In order to address a video fragment, we decided to use Media Fragment URIs~\cite{W3C:MediaFrags}. Media Fragment URIs are also supported by the Ontology for Media Annotation in form of \url{ma:MediaFragment}. In particular we use the temporal dimension (e.g., \url{http://example.org/video.webm#t=10,20}), which is defined by its start and end time relative to the entire video play time. In addition to the temporal dimension, we also use the track dimension (e.g., \url{http://example.org/video.webm#track=closedcaptions}), which allows for addressing only a closed captions track (i.e., speech with time information), or even the plaintext audio transcription without time information (e.g., \texttt{\#track=audiotranscription}). The value of the parameter \texttt{track} is a free-form string, so we are flexible with regards to its usage.
 
-In the previous SemWebVid implementation we used \url{event:factor}, \url{event:product}, and \url{event:agent} to relate events with factors (extracted non-person entities), products (the particular plaintext closed captions line), and agents (extracted persons). Now, in order to annotate entities in a temporal video fragment, we consistently use the same vocabulary of Common Tag as outlined in Sect.~\ref{sec:youtube}. We thus have (in Turtle\footnote{\url{http://www.w3.org/TeamSubmission/turtle/}} syntax, left out prefixes for the sake of brefity):
+In the previous SemWebVid implementation we used \url{event:factor}, \url{event:product}, and \url{event:agent} to relate events with factors (extracted non-person entities), products (the particular plaintext closed captions line), and agents (extracted persons). Now, in order to annotate entities in a temporal video fragment, we consistently use the same Common Tag vocabulary as outlined in Sect.~\ref{sec:youtube}. We thus have (in Turtle\footnote{\url{http://www.w3.org/TeamSubmission/turtle/}} syntax, left out prefixes for the sake of brefity):
 \begin{lstlisting}
 <http://example.org/video.webm#t=10,20> 
   a ma:MediaFragment ;
@@ -382,7 +382,6 @@ We have two basic cases that affect the RDF describing the data provenance: requ
 } .
 \end{lstlisting}
 
-
 \subsection{The Provenance Vocabulary}\label{sec:provenance}
 In the next paragraph we outline the required steps in order to make statements about the provenance of a group of triples contained in a named graph \url{:G} that were generated using several HTTP \texttt{GET} requests to third party Web services. The text below can be best understood by following the triples in Appendix~\ref{sec:appendix}.
 
@@ -390,7 +389,7 @@ First, we state that \url{:G} is both a \url{prv:DataItem} and obviously an \url
 \url{prvTypes:DataCreatingService} to be precise. This service is \url{prv:operatedBy} a human (\url{http://tomayac.com/thomas_steiner.rdf#me}). Time is often important for provenance, so the \url{prv:performedAt} date of the \url{prv:DataCreation} needs to be saved. During the process of the \url{prv:DataCreation} there are \url{prv:usedData}, which are \url{prv:retrievedBy} a \url{prv:DataAcess} that is \url{prv:performedAt} a certain time, and \url{prv:performedBy} a non-human actor (our Web service) that is \url{prv:operatedBy} a human (\url{http://tomayac.com/thomas_steiner.rdf#me}. For the \url{prv:DataAccess} (there is one for each third party Web service involved) we \url{prv:accessedService} from a \url{prv:DataProvidingService} of which we \url{prv:accessedResource} at a certain \url{irw:WebResource}. Therefore we \url{prvTypes:exchangedHTTPMessage} which is an \url{http:Request} using \url{http:httpVersion} ``1.1'' and the \url{http:methodName} ``GET''.
 
 \subsection{Tracking Provenance With Human Interaction}\label{sec:human}
-Oftentimes completely automatically generated RDF video annotation files will need a bit of manual fine-tuning. In our RESTful Web service we have thus envisiond that not only a big archive of automatically generated video annotations gets built, but that also people can correct errors in the RDF interactively (or remove completely wrong video annotations). For the correction case this can be tracked using the Provenance Vocabulary as follows (let us assume we wanted to replace an unfriendly Freebase \url{ctag:means} resource of \url{http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000042acea} with the friendlier variant \url{http://rdf.freebase.com/rdf/en.google}):
+Oftentimes completely automatically generated RDF video annotation files will need a bit of manual fine-tuning. In our RESTful Web service we have thus envisiond that not only a big archive of automatically generated video annotations gets built, but that also people can correct errors (via HTTP \texttt{PUT} or later \texttt{PATCH}) in the RDF interactively (or remove completely wrong video annotations via HTTP \texttt{DELETE}). For the correction case this can be tracked using the Provenance Vocabulary as follows (let us assume we wanted to replace an unfriendly Freebase \url{ctag:means} resource of \url{http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000042acea} with the friendlier variant \url{http://rdf.freebase.com/rdf/en.google}):
 \begin{lstlisting}
 :G_corrected = {
   <http://gdata.youtube.com/feeds/api/videos/3PuHGKnboNY> 
@@ -421,6 +420,14 @@ Hartig et al. mention in~\cite{ipaw10:olaf} some reasons that justify the need f
 We add to this list the automatic conversion of legacy unstructured data to Linked Data with heuristics, where, as in our case, extracted entities while being consolidated and backed up by different data sources, might still be wrong. Especially with our ``mash-up''-like approach it is very desirable to be able to track back to the concrete source where a certain piece of information might have come from. This a) in order to correct the error at the root of our Web service (fighting the cause), b) in order to correct the concrete error in an RDF annotation (fighting the symptom), or c) probably the most important reason, to judge the trustworthiness and quality of a dataset.
 
 % DVD: what if DBPedia or other data sets change over time? I.e., the whole discussion regarding dataset dynamics in the context of provenance comes in the picture here. Therefore, the data sources themselves should also provide provenance information in order to enable a real working quality checker.
+% TOM: Added a subsection to address this remark.
+
+\subsection{Change Of Referenced Datasets Over Time}\label{sec:change}
+It is to be noted that a statement like the triple below refers to the triple object as an identificator for a Web resource (where the Web resource is a representation of the result of the API call at the time where it was \url{prv:performedAt}).
+\begin{lstlisting}
+_:x prv:accessedResource <http://api.freebase.com/api/service/search?format=json&query=obama> ;
+\end{lstlisting}
+As provenance metadata always refer to the time context in which a certain statement was made, it is essentially unimportant what representation the resource returns at a later time.
 
 \section{Related And Future Work}\label{sec:related}
 Related work includes Popcorn.js from the Mozilla Drumbeat project~\cite{Drumbeat:Popcorn} that with its interactive Butter editor\footnote{\url{http://popcornjs.org/butter/}} allows for a video to be semantically annotated (a completely manual process). Based on a given video annotation the Popcorn.js script then pulls in multiple data feeds from the APIs of Google News, Wikipedia, Twitter, and Flickr in order to semantically enrich the video viewing experience. It also provides automatic machine translation from Google Translate, and attribution data from Creative Commons. The focus, however, is on the final visual video ``mash-up'', not on the actual annotation. Future work could be to offer an RDF-to-Popcorn.js wrapper service that would allow us to profit from the project's HTML5 video framework.
