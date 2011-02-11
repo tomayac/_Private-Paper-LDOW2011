@@ -23,6 +23,12 @@ B.~Gaylor.
 \newblock Mozilla Drumbeat Project, August 16, 2010.
 \newblock \url{http://www.drumbeat.org/content/popcorn-js-semantic-video-demo}.
 
+\bibitem{Halpin:SameAs}
+H.~Halpin and P.~Hayes.
+\newblock When owl:sameas isn't the same: An analysis of identity links on the
+  semantic web.
+\newblock In {\em In Linked Data on the Web (LDOW2010}, 2010.
+
 \bibitem{ipaw10:olaf}
 O.~Hartig and J.~Zhao.
 \newblock Publishing and consuming provenance metadata on the web of linked
@@ -35,11 +41,6 @@ O.~Hartig and J.~Zhao.
 \newblock {Provenance Vocabulary Core Ontology Specification}, January 25,
   2011.
 \newblock \url{http://purl.org/net/provenance/ns}.
-
-\bibitem{Princeton:WordNet}
-Princeton.
-\newblock {WordNet}.
-\newblock \url{http://wordnet.princeton.edu/}.
 
 \bibitem{Raimond:Event}
 Y.~Raimond and S.~Abdallah.

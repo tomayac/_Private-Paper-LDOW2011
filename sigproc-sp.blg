@@ -6,37 +6,37 @@ Database file #1: sigproc-sp.bib
 Warning--to sort, need author or key in CommonTag:Spec
 You've used 13 entries,
             2118 wiz_defined-function locations,
-            581 strings with 6000 characters,
-and the built_in function-call counts, 3643 in all, are:
-= -- 353
-> -- 147
+            581 strings with 6085 characters,
+and the built_in function-call counts, 3713 in all, are:
+= -- 358
+> -- 153
 < -- 4
-+ -- 59
-- -- 46
-* -- 183
-:= -- 582
++ -- 61
+- -- 48
+* -- 191
+:= -- 594
 add.period$ -- 43
 call.type$ -- 13
-change.case$ -- 62
+change.case$ -- 63
 chr.to.int$ -- 0
 cite$ -- 14
-duplicate$ -- 147
-empty$ -- 341
-format.name$ -- 46
-if$ -- 806
+duplicate$ -- 154
+empty$ -- 347
+format.name$ -- 48
+if$ -- 821
 int.to.chr$ -- 0
 int.to.str$ -- 13
-missing$ -- 5
+missing$ -- 6
 newline$ -- 70
 num.names$ -- 24
-pop$ -- 115
+pop$ -- 113
 preamble$ -- 1
-purify$ -- 49
+purify$ -- 50
 quote$ -- 0
-skip$ -- 109
+skip$ -- 111
 stack$ -- 0
 substring$ -- 129
-swap$ -- 35
+swap$ -- 36
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
@@ -44,5 +44,5 @@ type$ -- 52
 warning$ -- 1
 while$ -- 30
 width$ -- 15
-write$ -- 145
+write$ -- 146
 (There was 1 warning)
