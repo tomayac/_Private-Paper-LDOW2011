@@ -1,9 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{CommonTag:Spec}
-{Common Tag Specification}, retrieved February 7, 2011.
-\newblock \url{http://commontag.org/Specification}.
-
 \bibitem{Bizer:TriG}
 C.~Bizer and R.~Cyganiak.
 \newblock {The TriG Syntax}, July 30, 2007.
@@ -13,9 +9,13 @@ C.~Bizer and R.~Cyganiak.
 S.~Choudhury, J.~Breslin, and A.~Passant.
 \newblock {Enrichment and Ranking of the YouTube Tag Space and Integration with
   the Linked Data Cloud}.
-\newblock In {\em The Semantic Web - ISWC 2009}, volume 5823 of {\em Lecture
-  Notes in Computer Science}, chapter~47, pages 747--762. Springer Berlin /
-  Heidelberg, Berlin, Heidelberg, 2009.
+\newblock In {\em 8$^{th}$ International Semantic Web Conference (ISWC'09)},
+  pages 747--762, Chantilly, VA, USA, 2009.
+
+\bibitem{CommonTag:Spec}
+{Common Tag}.
+\newblock {Common Tag Specification}, January 11, 2009.
+\newblock \url{http://commontag.org/Specification}.
 
 \bibitem{Drumbeat:Popcorn}
 B.~Gaylor.
@@ -25,16 +25,17 @@ B.~Gaylor.
 
 \bibitem{Halpin:SameAs}
 H.~Halpin and P.~Hayes.
-\newblock When owl:sameas isn't the same: An analysis of identity links on the
-  semantic web.
-\newblock In {\em In Linked Data on the Web (LDOW2010}, 2010.
+\newblock {When owl:sameas isn't the same: An analysis of identity links on the
+  semantic web}.
+\newblock In {\em 3$^{rd}$ Workshop on Linked Data on the Web (LDOW'10)},
+  Raleih, NC, USA, 2010.
 
 \bibitem{ipaw10:olaf}
 O.~Hartig and J.~Zhao.
-\newblock Publishing and consuming provenance metadata on the web of linked
-  data.
-\newblock In {\em Proceedings of The third International Provenance and
-  Annotation Workshop}, Troy, NY, USA, 2010.
+\newblock {Publishing and Consuming Provenance Metadata on the Web of Linked
+  Data}.
+\newblock In {\em 3$^{rd}$ International Provenance and Annotation Workshop
+  (IPAW'10)}, Troy, NY, USA, 2010.
 
 \bibitem{Hartig:Provenance}
 O.~Hartig and J.~Zhao.
@@ -49,10 +50,10 @@ Y.~Raimond and S.~Abdallah.
 
 \bibitem{Steiner:SemWebVid}
 T.~Steiner.
-\newblock Semwebvid - making video a first class semantic web citizen and a
-  first class web bourgeois.
-\newblock In {\em 9th International Semantic Web Conference (ISWC2010)},
-  November 2010.
+\newblock {SemWebVid - Making Video a First Class Semantic Web Citizen and a
+  First Class Web Bourgeois}.
+\newblock In {\em 9$^{th}$ International Semantic Web Conference (ISWC'10)},
+  Shanghai, China, 2010.
 
 \bibitem{W3C:MediaFrags}
 W3C.
@@ -69,14 +70,15 @@ W3C.
 
 \bibitem{Sack:Use}
 J.~Waitelonis, N.~Ludwig, and H.~Sack.
-\newblock Use what you have: Yovisto video search engine takes a semantic turn.
-\newblock In {\em 5th International Conference on Semantic and Digital Media
-  Technologies}, Saarbr\"{u}cken, Germany, 2010.
+\newblock {Use What You Have: Yovisto Video Search Engine Takes a Semantic
+  Turn}.
+\newblock In {\em 5$^{th}$ International Conference on Semantic and Digital
+  Media Technologies (SAMT'10}, Saarbr\"{u}cken, Germany, 2010.
 
 \bibitem{Sack:VideoSearch}
 J.~Waitelonis, H.~Sack, J.~Hercher, and Z.~Kramer.
-\newblock Semantically enabled exploratory video search.
-\newblock In {\em Proceedings of the 3rd International Semantic Search
-  Workshop}, SEMSEARCH '10, pages 8:1--8:8, New York, NY, USA, 2010. ACM.
+\newblock {Semantically enabled exploratory video search}.
+\newblock In {\em 3$^{rd}$ International Semantic Search Workshop
+  (SemSearch'10)}, pages 81--88, 2010.
 
 \end{thebibliography}

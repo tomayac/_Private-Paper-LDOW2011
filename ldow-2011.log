@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  12 FEB 2011 20:39
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  14 FEB 2011 09:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**sigproc-sp.tex
-(./sigproc-sp.tex
+**ldow-2011.tex
+(./ldow-2011.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
@@ -285,28 +285,28 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
-(./sigproc-sp.aux)
-\openout1 = `sigproc-sp.aux'.
+(./ldow-2011.aux)
+\openout1 = `ldow-2011.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 43.
  (/usr/local/texlive/2010/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 52.
- (/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    ... okay on input line 43.
+(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
 \scratchdimen=\dimen127
@@ -365,252 +365,189 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count122
-LaTeX Font Info:    Try loading font information for U+msa on input line 124.
+LaTeX Font Info:    Try loading font information for U+msa on input line 81.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 124.
+LaTeX Font Info:    Try loading font information for U+msb on input line 81.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 124.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 81.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (9.43826pt too wide) in paragraph at lines 124--124
- []\eaddfnt raphael.troncy@eurecom.fr| 
- []
-
-
-Overfull \hbox (12.52231pt too wide) in paragraph at lines 124--124
- []\eaddfnt davy.vandeursen@ugent.be| 
- []
-
-LaTeX Font Info:    Try loading font information for T1+aett on input line 147.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 81.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 147--147
-[][]\T1/aer/m/n/9 See $\T1/aett/m/n/9 http : / / gdata . youtube . com / feeds 
-/ api / videos /
+Overfull \hbox (11.2576pt too wide) in paragraph at lines 116--123
+\T1/aett/m/n/9 try/-me-dia:group/media:keywords\T1/aer/m/n/9 ). Other tech-ni-c
+al YouTube
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--149
-[][]$\T1/aett/m/n/9 http : / / googleblog . blogspot . com / 2009 / 11 / automa
-tic -[]
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[][]$\T1/aett/m/n/7 http : / / googleblog . blogspot . com / 2009 / 11 / automa
+tic -[] captions -[] in -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--149
-[][]\T1/aer/m/n/9 See $\T1/aett/m/n/9 http : / / www . youtube . com / watch _ 
-ajax ? action _ get _
+Overfull \hbox (1.7421pt too wide) in paragraph at lines 124--133
+\T1/aer/m/n/9 tions, where sub-ti-tles are hard-encoded into the video frames,
  []
 
 
-Overfull \hbox (2.45515pt too wide) in paragraph at lines 149--150
-\T1/aer/m/n/9 sources. Cur-rently we only work with closed cap-tions. Closed
- []
+Underfull \vbox (badness 3396) has occurred while \output is active []
 
-[1{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Overfull \hbox (6.31956pt too wide) in paragraph at lines 153--153
+Overfull \hbox (6.31956pt too wide) in paragraph at lines 145--145
 []\secfnt WEB SER-VICES FOR CON-VERT-ING UN-
  []
 
 
-Overfull \hbox (12.93178pt too wide) in paragraph at lines 153--153
+Overfull \hbox (12.93178pt too wide) in paragraph at lines 145--145
 \secfnt STRUC-TURED DATA INTO LINKED DATA 
  []
 
 
-Overfull \hbox (4.52557pt too wide) in paragraph at lines 154--155
-\T1/aer/m/n/9 We dif-fer-en-ti-ate be-tween Nat-u-ral Lan-guage Pro-cess-ing (N
-LP)
+Overfull \hbox (2.01352pt too wide) in paragraph at lines 199--199
+[]\secfnt Entity Con-sol-i-da-tion for URI Lookup Web
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--156
-[][]$\T1/aett/m/n/9 http : / / www . opencalais . com / documentation / calais 
--[]
+Overfull \hbox (15.91664pt too wide) in paragraph at lines 225--236
+\T1/aett/m/n/7 / / freebase . com / en / google _ translate$\T1/aer/m/n/9 , and
+ $\T1/aett/m/n/7 http : / / uberblic . org / resource /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--161
-\T1/aett/m/n/9 http : / / sindice . com / developers / api #
- []
-
-
-Overfull \hbox (5.34955pt too wide) in paragraph at lines 176--176
-[]\secfnt Entity Con-sol-i-da-tion For URI Lookup Web
- []
-
-
-Overfull \hbox (40.2397pt too wide) in paragraph at lines 200--201
-\T1/aett/m/n/9 uberblic . org / resource / 67dc7037 -[] 6ae9 -[] 406c -[] 86ce 
--[] 997b905badc8 #
+Overfull \hbox (6.15392pt too wide) in paragraph at lines 225--236
+\T1/aett/m/n/7 67dc7037 -[] 6ae9 -[] 406c -[] 86ce -[] 997b905badc8 # thing$\T1
+/aer/m/n/9 ), whereas Sindice and
  []
 
 [2]
-Overfull \hbox (13.33015pt too wide) in paragraph at lines 231--232
-\T1/aett/m/n/9 GET $/entity -[] extraction / combined / Google % 20Translate$\T
-1/aer/m/n/9 , and
+Overfull \hbox (1.32042pt too wide) in paragraph at lines 239--249
+\T1/aer/m/n/9 the orig-i-nal calls to each par-tic-u-lar NLP ser-vice are all H
+TTP
  []
 
 
-Overfull \hbox (1.05707pt too wide) in paragraph at lines 231--232
-\T1/aer/m/n/9 ob-tained at $\T1/aett/m/n/9 /entity -[] extraction / {service _ 
-name} / Google %
+Overfull \hbox (4.14911pt too wide) in paragraph at lines 269--282
+\T1/aett/m/n/9 GET $\T1/aett/m/n/7 /entity -[] extraction / combined / Google %
+ 20Translate$\T1/aer/m/n/9 , and sim-i-larly
  []
 
 
-Overfull \hbox (15.00502pt too wide) in paragraph at lines 231--232
-\T1/aer/m/n/9 pace (e.g., $\T1/aett/m/n/9 http : / / d . opencalais . com / er 
-/ company / ralg -[] tr1r /
+Overfull \hbox (21.44029pt too wide) in paragraph at lines 269--282
+\T1/aer/m/n/9 tained at $\T1/aett/m/n/7 /entity -[] extraction / {service _ nam
+e} / Google % 20Translate$\T1/aer/m/n/9 . While
  []
 
 
-Overfull \hbox (7.72821pt too wide) in paragraph at lines 231--232
-\T1/aett/m/n/9 pershash -[] 1 / cfcf1aa2 -[] de05 -[] 3939 -[] a7d5 -[] 10c9c7b
-3e87b . html$
+Overfull \hbox (4.09973pt too wide) in paragraph at lines 269--282
+\T1/aett/m/n/7 com / er / company / ralg -[] tr1r / ce181d44 -[] 1915 -[] 3387 
+-[] 83da -[] 0dc4ec01c6da . rdf$
+ []
+
+
+Overfull \hbox (14.0985pt too wide) in paragraph at lines 269--282
+\T1/aett/m/n/7 opencalais . com / pershash -[] 1 / cfcf1aa2 -[] de05 -[] 3939 -
+[] a7d5 -[] 10c9c7b3e87b . html$\T1/aer/m/n/9 ,
  []
 
 [3]
-Overfull \hbox (28.92477pt too wide) in paragraph at lines 315--316
-\T1/aett/m/n/9 cb . semsol . org / company / google # self$ \T1/aer/m/n/9 and $
-\T1/aett/m/n/9 http : / / rdf . freebase .
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
+[][]$\T1/aett/m/n/7 http : / / martinfowler . com / articles / richardsonMaturi
+tyModel . html #
  []
 
 
-Overfull \hbox (3.26604pt too wide) in paragraph at lines 315--316
-\T1/aett/m/n/9 com / ns / en / google$ \T1/aer/m/n/9 vs. $\T1/aett/m/n/9 http :
- / / rdf . freebase . com / ns / guid .
- []
-
-
-Overfull \hbox (11.88785pt too wide) in paragraph at lines 315--316
-\T1/aer/m/n/9 ex-am-ple seems to be bro-ken ($\T1/aett/m/n/9 http : / / cb . se
-msol . org / company /
- []
-
-
-Overfull \hbox (6.3511pt too wide) in paragraph at lines 322--323
-\T1/aett/m/n/9 http : / / rdf . freebase . com / rdf / en . barack _ obama$\T1/
-aer/m/n/9 ), the qual-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
-[][]$\T1/aett/m/n/9 http : / / martinfowler . com / articles /
- []
-
-
-Overfull \hbox (6.05212pt too wide) in paragraph at lines 330--331
+Overfull \hbox (6.05212pt too wide) in paragraph at lines 419--420
 \T1/aer/m/n/9 ser-vice names are ``open-calais", ``ze-manta", ``alche-myapi",
  []
 
-[4]
-Overfull \hbox (11.32974pt too wide) in paragraph at lines 336--337
+
+Overfull \hbox (11.32974pt too wide) in paragraph at lines 425--426
 []\T1/aer/m/n/9 Getting closed cap-tions in a given lan-guage from YouTube
  []
 
 
-Overfull \hbox (10.91547pt too wide) in paragraph at lines 338--339
-\T1/aett/m/n/9 GET $/youtube / video / {video _ id} / audiotranscription /
+Overfull \hbox (3.12929pt too wide) in paragraph at lines 427--428
+\T1/aett/m/n/9 GET $\T1/aett/m/n/7 /youtube / video / {video _ id} / audiotrans
+cription / {language _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
-[][]$\T1/aett/m/n/9 http : / / www . w3 . org / 2008 / WebVideo / Annotations /
-
+Underfull \hbox (badness 10000) in paragraph at lines 441--441
+[][]$\T1/aett/m/n/7 http : / / www . w3 . org / 2008 / WebVideo / Annotations /
+ drafts / ontology10 /
  []
 
-
-Overfull \hbox (5.44269pt too wide) in paragraph at lines 345--346
-\T1/aer/m/n/9 We de-cided to use the W3C On-tol-ogy for Me-dia Re-sources [11]
- []
-
-
-Overfull \hbox (2.63632pt too wide) in paragraph at lines 369--369
+[4]
+Overfull \hbox (2.63632pt too wide) in paragraph at lines 493--493
 []\secfnt TRACKING PROVE-NANCE WITH MUL-
  []
 
 
-Overfull \hbox (16.29694pt too wide) in paragraph at lines 370--371
-\T1/aer/m/n/9 an ex-am-ple en-tity with the URI $\T1/aett/m/n/9 http : / / exam
-ple . org / example#$\T1/aer/m/n/9 ,
+Overfull \hbox (32.82753pt too wide) in paragraph at lines 526--538
+\T1/aer/m/n/9 at a cer-tain $\T1/aett/m/n/7 irw : WebResource$\T1/aer/m/n/9 . T
+here-fore, we $\T1/aett/m/n/7 prvTypes : exchangedHTTPMessage$
  []
 
 [5]
-Overfull \hbox (2.02402pt too wide) in paragraph at lines 388--390
-\T1/aett/m/n/9 / / tomayac . com / thomas _ steiner . rdf # me$\T1/aer/m/n/9 ).
- Time is of-ten im-
+Overfull \hbox (2.0141pt too wide) in paragraph at lines 541--548
+\T1/aer/m/n/9 gen-er-ated of-ten need to be man-u-ally cor-rected. In our REST-
+
  []
 
 
-Overfull \hbox (18.4128pt too wide) in paragraph at lines 388--390
-\T1/aett/m/n/9 tomayac . com / thomas _ steiner . rdf # me$\T1/aer/m/n/9 . For 
-the $\T1/aett/m/n/9 prv : DataAccess$
- []
-
-
-Overfull \hbox (23.88478pt too wide) in paragraph at lines 388--390
-\T1/aer/m/n/9 of which we $\T1/aett/m/n/9 prv : accessedResource$ \T1/aer/m/n/9
- at a cer-tain $\T1/aett/m/n/9 irw : WebResource$\T1/aer/m/n/9 .
- []
-
-
-Overfull \hbox (9.94414pt too wide) in paragraph at lines 392--393
-\T1/aett/m/n/9 freebase . com / ns / guid . 9202a8c04000641f800000000042acea$
- []
-
-
-Overfull \hbox (3.27455pt too wide) in paragraph at lines 417--417
-[]\secfnt The Need For Pro-vid-ing Prove-nance Meta-
- []
-
-
-Overfull \hbox (4.46213pt too wide) in paragraph at lines 425--425
+Overfull \hbox (4.46213pt too wide) in paragraph at lines 591--591
 []\secfnt Change Of Ref-er-enced Datasets Over Time 
  []
 
-[6] (./sigproc-sp.bbl [7])
-Overfull \hbox (1.26816pt too wide) in paragraph at lines 468--469
-\T1/aer/m/n/9 mean-ing $\T1/aett/m/n/9 http : / / dbpedia . org / resource / Ba
-rack _ Obama$ \T1/aer/m/n/9 (for
+[6]
+Overfull \hbox (5.95644pt too wide) in paragraph at lines 664--668
+\T1/aer/m/n/9 of In-dus-try (\T1/aer/m/it/9 In-no-va-tive Web \T1/aer/m/n/9 cal
+l) un-der con-tract 09.2.93.0966,
  []
 
-[8] (./sigproc-sp.aux) ) 
+(./ldow-2011.bbl) [7] [8
+
+] (./ldow-2011.aux) ) 
 Here is how much of TeX's memory you used:
- 4352 strings out of 493747
- 58631 string characters out of 3143546
- 263307 words of memory out of 3000000
- 7548 multiletter control sequences out of 15000+200000
- 52305 words of font info for 73 fonts, out of 3000000 for 9000
+ 4357 strings out of 493747
+ 58664 string characters out of 3143546
+ 240323 words of memory out of 3000000
+ 7552 multiletter control sequences out of 15000+200000
+ 53057 words of font info for 77 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 39i,10n,32p,1401b,1458s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/bas
-e/8r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x9.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9
-.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
-b></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><
-/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
-sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr
-/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/l
-ocal/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/loc
-al/texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texl
-ive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/201
-0/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on sigproc-sp.pdf (8 pages, 183139 bytes).
+ 39i,10n,32p,378b,1455s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8
+r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.
+pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pf
+b></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
+</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></u
+sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/
+local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/lo
+cal/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/loca
+l/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/
+texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/te
+xlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2
+010/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2010/tex
+mf-dist/fonts/type1/urw/times/utmb8a.pfb>
+Output written on ldow-2011.pdf (8 pages, 185629 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
